@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link
+      rel="stylesheet"
+      href="/src/style/performance/performanceInfo01.css"
+    />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+
+      <div id="subMain02"></div>
+
+      <div
+        class="performanceInner"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="performanceTop">
+          <input
+            type="search"
+            id="performanceSearch"
+            name="performance"
+            placeholder="공연명을 입력해 주세요"
+            style="display: none"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            id="searchBtn"
+            style="display: none"
+          ></i>
+          <a class="write managerWrite" href="./performanceWrite.html"
+            >게시글 작성</a
+          >
+        </div>
+
+        <div class="performanceContent"></div>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/blueBg.json"
+          class="pinkBg pinkBgWeb"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/blue1280Bg.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/blue1280.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/src/script/subpage/performance/performanceInfo01.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

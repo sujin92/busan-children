@@ -1,0 +1,313 @@
+#subMain,
+#subMain02 {
+  display: none;
+}
+
+.tab > .coronationInfo {
+  background: linear-gradient(to top, #ffaa14 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #ffaa14;
+}
+
+.coronationInner {
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.regulation {
+  position: relative;
+  width: 300px;
+  margin: 80px auto;
+}
+
+.fa-angles-rightssss {
+  position: absolute;
+  top: 33%;
+  right: 28%;
+  font-size: 18px;
+  color: #ffaa14;
+}
+
+.regulation > button {
+  border: 1px solid #ffaa14;
+  background-color: #fff;
+  padding: 14px 90px 14px 60px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+.coronationTxt {
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.coronationTxt h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.coronationTxt > div {
+  border-top: 1px solid #ffaa14;
+}
+
+.coronationTxt > div > p {
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.coronationTxt > div > p > span {
+  margin: 0 150px 0 50px;
+  font-weight: 700;
+}
+
+.coronationTxt .coronationStep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coronationTxt .coronationStep > div {
+  width: 17%;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 1px 1px 15px #dddddd84;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.coronationTxt .coronationStep > div h3 {
+  margin: 20px 0;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.coronationTxt .coronationStep > div p {
+  line-height: 20px;
+  word-break: keep-all;
+}
+
+.coronationTxt > div .coronationPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.coronationTxt > div .coronationPrice h3,
+.coronationTxt > div .coronationPrice h4 {
+  width: 300px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.coronationTxt > div .coronationPrice > h3,
+.coronationTxt > div .coronationPrice h4 > span {
+  font-weight: 700;
+}
+
+.coronationTxt > p {
+  color: #f18299ed;
+  margin-top: 15px;
+}
+
+.coronationBtn {
+  background-color: #ffaa14;
+  padding: 12px 50px;
+  color: #fff;
+  border-radius: 30px;
+}
+
+footer {
+  margin-top: 220px;
+}
+
+@media (max-width: 1280px) {
+  .coronationInner {
+    width: 80%;
+  }
+  .coronationTxt .coronationStep > div {
+    width: 14vw;
+    height: 170px;
+  }
+  .coronationStep > div img {
+    width: 6vw;
+  }
+  .coronationStep > div p {
+    font-size: 1.1vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .coronationTxt h2 {
+    font-size: 20px;
+  }
+  .regulation {
+    margin: 70px auto 50px;
+  }
+  .coronationTxt > div > p {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+  .coronationTxt > div .coronationPrice h3,
+  .coronationTxt > div .coronationPrice h4 {
+    font-size: 14px;
+  }
+  .regulation > button {
+    padding: 12px 60px 12px 30px;
+    font-size: 14px;
+  }
+  .coronationTxt .coronationStep {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .coronationTxt .coronationStep > div {
+    height: 220px;
+    width: 220px;
+    margin-top: 20px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 25px 10px;
+  }
+  .fa-chevron-right {
+    display: none !important;
+  }
+  .coronationStep > div p {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coronationInnerTop > h2 {
+    font-size: 20px;
+  }
+  .coronationInnerTop > p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 30px 0;
+  }
+  .regulation > button {
+    padding: 10px 60px 10px 30px;
+    font-size: 13px;
+  }
+  .fa-angles-rightssss {
+    font-size: 15px;
+  }
+  .coronationTxt .coronationStep > div h3 {
+    font-size: 14px;
+  }
+  .coronationTxt > div > p > span {
+    margin: 0 70px 0 50px;
+  }
+  .coronationBtn {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  .coronationTxt .coronationStep > div h3 {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .coronationTxt .coronationStep > div p {
+    width: 130px;
+    line-height: 15px;
+  }
+  .coronationTxt .coronationStep > div {
+    width: 150px;
+    height: 150px;
+  }
+
+  footer {
+    background-color: #ffaa14;
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .regulation {
+    margin: 50px auto;
+    width: 100%;
+  }
+  .regulation > button {
+    padding: 8px 40px;
+  }
+  .fa-angles-rightssss {
+    display: none;
+  }
+  .coronationTxt {
+    margin-bottom: 50px;
+  }
+  .coronationTxt h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .coronationTxt > div > p {
+    font-size: 13px;
+    margin-top: 30px;
+    position: relative;
+    line-height: 17px;
+  }
+  .coronationTxt > div > p > span {
+    margin: 0;
+    position: absolute;
+    top: -20px;
+  }
+  .coronationTxt .coronationStep > div {
+    width: 180px;
+    height: 180px;
+    margin: 20px 10px;
+  }
+  .coronationStep > div img {
+    width: 60px;
+  }
+  .coronationTxt .coronationStep > div p {
+    width: 130px;
+    font-size: 11px;
+  }
+  .fa-chevron-right {
+    display: block !important;
+    transform: rotate(90deg);
+    color: #ffaa14;
+  }
+  .coronationTxt .coronationStep {
+    flex-direction: column;
+  }
+  .coronationInner div:nth-of-type(4) > div,
+  .coronationInner div:nth-of-type(5) > div {
+    display: flex;
+  }
+  .coronationTxt > div .coronationPrice {
+    flex-direction: column;
+  }
+  .coronationTxt > div .coronationPrice h3 {
+    width: 38px;
+    font-size: 13px;
+  }
+  .coronationTxt > div .coronationPrice h4 {
+    width: 90px;
+    font-size: 13px;
+  }
+  .coronationBtn {
+    padding: 8px 30px;
+    font-size: 13px;
+  }
+  footer {
+    margin-top: 100px;
+  }
+  .fa-angles-rightssss {
+    display: none;
+  }
+}

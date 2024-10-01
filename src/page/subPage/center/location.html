@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/center/location.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+      <div id="subMain02"></div>
+      <div id="subMain03"></div>
+      <div id="subMain04"></div>
+      <div id="subMain05"></div>
+
+      <div id="subMain06"></div>
+
+      <div class="centerInner">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          id="daumRoughmapContainer1714717404705"
+          class="root_daum_roughmap root_daum_roughmap_landing"
+        ></div>
+
+        <div
+          class="locationInner"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <img src="/public/logo.png" alt="logo" width="200" />
+          <div>
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>주소</span>
+              <p>부산광역시 서구 해돋이로 297</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <span>전화</span>
+              <p>051-290-5681~6</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <span>이메일</span>
+              <p>gnoejn@korea.kr</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-fax"></i>
+              <span>팩스</span>
+              <p>051-240-4839</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="locationBottom"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
+          <div class="locationContent">
+            <div>
+              <h3>지하철로 오실 경우</h3>
+              <i class="fa-solid fa-train-subway"></i>
+            </div>
+            <h4>1호선</h4>
+            <p>토성역 하차 후 2번 출구에서 도보 531m</p>
+          </div>
+          <div class="locationContent">
+            <div>
+              <h3>버스로 오실 경우</h3>
+              <i class="fa-solid fa-bus"></i>
+            </div>
+            <h4>청송슈퍼 하차</h4>
+            <p>서구3, 서구3-1 하차 후 도보 75m</p>
+          </div>
+          <div class="locationContent">
+            <div>
+              <h3>승용차로 오실 경우</h3>
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <h4>부산광역시청 출발 기준</h4>
+            <p>동서고가로 이용 17km, 동평로 - 신천대로 - 중앙대로</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/puppleBg.json"
+          class="pinkBg"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/pupple1280Bg.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/pupple1280.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      AOS.init();
+
+      $(".que").click(function () {
+        $(this).next(".anw").stop().slideToggle(300);
+        $(this).toggleClass("on").siblings().removeClass("on");
+        $(this).next(".anw").siblings(".anw").slideUp(300);
+      });
+    </script>
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        timestamp: "1714717404705",
+        key: "2j8nb",
+        mapWidth: "1200",
+        mapHeight: "360",
+      }).render();
+    </script>
+  </body>
+</html>

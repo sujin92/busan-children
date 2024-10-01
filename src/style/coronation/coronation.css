@@ -1,0 +1,153 @@
+#subMain,
+#subMain02 {
+  display: none;
+}
+
+.tab > .coronationFacility {
+  background: linear-gradient(to top, #ffaa14 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #ffaa14;
+}
+
+.coronationInner {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.coronationInnerTop > h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.coronationInnerTop > p {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 50px 0;
+}
+
+.coronationInnerTop > img {
+  border-radius: 20px;
+  width: 1200px;
+}
+
+.coronationInnerTop .imgAll {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.coronationInnerTop .imgAll > img {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.coronationInner .innerContent {
+  margin: 80px auto 0;
+}
+
+.coronationInner .innerContent > h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  width: 1200px;
+  display: flex;
+
+  margin: 0 auto 40px;
+}
+
+.coronationInner .innerContent > img {
+  border-radius: 20px;
+  width: 1200px;
+}
+
+.topBg3 {
+  bottom: 500px;
+}
+
+footer {
+  margin-top: 220px;
+}
+
+@media (max-width: 1440px) {
+  .coronationInnerTop > img,
+  .coronationInner .innerContent > img,
+  .coronationInnerTop .imgAll,
+  .coronationInner .innerContent > h2 {
+    width: 80%;
+  }
+  .coronationInnerTop .imgAll > img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .coronationInnerTop .imgAll > img {
+    width: 25vw;
+  }
+  .coronationInner .innerContent > img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .coronationInnerTop > h2 {
+    font-size: 20px;
+  }
+  .coronationInnerTop > p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 30px 0;
+  }
+  .coronationInner .innerContent > h2 {
+    font-size: 20px;
+  }
+  footer {
+    background-color: #ffaa14;
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coronationInner {
+    margin-top: 50px;
+  }
+  .coronationInnerTop > h2 {
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 20px;
+    word-break: keep-all;
+  }
+  .coronationInnerTop > p {
+    font-size: 13px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .coronationInnerTop .imgAll > img {
+    border-radius: 10px;
+  }
+  .coronationInnerTop .imgAll {
+    margin: 15px auto 0;
+  }
+  .coronationInner .innerContent {
+    margin: 50px auto 0;
+  }
+  .coronationInner .innerContent > h2 {
+    font-size: 16px;
+    margin: 0 auto 20px;
+  }
+  .topBg3 {
+    top: 60%;
+  }
+  footer {
+    margin-top: 100px;
+  }
+}

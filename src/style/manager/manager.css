@@ -1,0 +1,266 @@
+#subMain,
+#subMain02,
+#subMain03,
+#subMain04,
+#subMain05,
+#subMain06,
+#subMain07 {
+  display: none;
+}
+
+.tab > .memberReservation {
+  background: linear-gradient(to top, #c1c1c1 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #8a8a8a;
+}
+
+.centerInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.reservationList {
+  text-align: left;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.reservationList h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.reservationList > div {
+  border-top: 2px solid #8a8a8a;
+}
+
+.reservationList > div .coronationPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.reservationList > div .coronationPrice h3,
+.reservationList > div .coronationPrice h4 {
+  width: 120px;
+  text-align: center;
+}
+
+.reservationList > div .coronationPrice h3:nth-of-type(1),
+.reservationList > div .coronationPrice h4:nth-of-type(1) {
+  width: 30px;
+}
+
+.reservationList > div .coronationPrice h3:nth-of-type(2),
+.reservationList > div .coronationPrice h4:nth-of-type(2) {
+  width: 80px;
+}
+
+.reservationList > div .coronationPrice h3:nth-of-type(3),
+.reservationList > div .coronationPrice h4:nth-of-type(3) {
+  width: 80px;
+}
+
+.reservationList > div .coronationPrice h3:nth-of-type(4),
+.reservationList > div .coronationPrice h4:nth-of-type(4),
+.reservationList > div .coronationPrice h3:nth-of-type(5),
+.reservationList > div .coronationPrice h4:nth-of-type(5) {
+  width: 150px;
+}
+
+.reservationList > div .coronationPrice > h3 {
+  font-weight: 800;
+}
+
+.reservationList > div .coronationPrice h4 > span {
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: #ffaa14;
+  color: #fff;
+  font-size: 12px;
+}
+
+.pageNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageNumber > i {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #5c5c5c;
+}
+
+.page-button {
+  margin: 0 10px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNumber > p {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.page-button.number.active {
+  background-color: #828282;
+  color: #ffffff;
+}
+
+.page-button.icon i {
+  background-color: #ffffff;
+  color: #5c5c5c;
+}
+
+.searchMember {
+  text-align: center;
+  border-top: none !important;
+  margin-bottom: 40px;
+}
+
+.searchMember input {
+  border: 1px solid #d6d6d6;
+  padding: 13px 15px;
+  width: 400px;
+  border-radius: 30px;
+}
+
+.searchMember input::placeholder {
+  color: #b9b9b9;
+  font-size: 15px;
+}
+
+.searchMember button {
+  position: absolute;
+  color: #909090;
+  z-index: 1;
+  margin: 12px 0 10px -40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+#subMain07 {
+  display: none;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 1280px) {
+  .centerInner {
+    width: 80%;
+  }
+  table {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reservationList > div .coronationPrice h3:nth-of-type(3),
+  .reservationList > div .coronationPrice h4:nth-of-type(3),
+  .reservationList > div .coronationPrice h3:nth-of-type(4),
+  .reservationList > div .coronationPrice h4:nth-of-type(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservationList h2 {
+    font-size: 20px;
+  }
+  .searchMember input {
+    padding: 8px 15px;
+    width: 300px;
+  }
+  .searchMember input::placeholder {
+    font-size: 13px;
+  }
+  .searchMember button i {
+    color: #909090;
+  }
+  .searchMember button {
+    margin: 8px 0 10px -40px;
+  }
+  .page-button {
+    font-size: 1.7vw;
+  }
+  footer {
+    background-color: #989898;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservationList h2 {
+    font-size: 16px;
+  }
+  .searchMember input {
+    width: 70%;
+  }
+  .searchMember {
+    margin-bottom: 20px;
+  }
+  .reservationList > div .coronationPrice h3:nth-of-type(1),
+  .reservationList > div .coronationPrice h4:nth-of-type(1),
+  .reservationList > div .coronationPrice h3:nth-of-type(7),
+  .reservationList > div .coronationPrice h4:nth-of-type(7),
+  .reservationList > div .coronationPrice h3:nth-of-type(5),
+  .reservationList > div .coronationPrice h4:nth-of-type(5) {
+    display: none;
+  }
+  .page-button {
+    font-size: 13px;
+  }
+  .page-button {
+    margin: 0 5px;
+  }
+
+  footer {
+    margin-top: 100px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

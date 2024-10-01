@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/mypage.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <div class="joinConsent">
+      <h1>비밀번호 재설정</h1>
+      <div class="idfineInner">
+        <div class="newPw">
+          <label for="password" class="sss">새 비밀번호</label>
+          <input type="password" id="newPw" name="password" required />
+        </div>
+          <div class="newPw">
+            <label for="password2">새 비밀번호 확인</label>
+            <input type="password" id="newPw2" name="password2" required />
+          </div>
+          <div class="newPwBtn"><a href="#"><p>비밀번호 변경</p></a></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div id="footer"></div>
+  </body>
+  <script src="/src/script/header.js"></script>
+  <script src="/src/script/common.js"></script>
+    <script src="/src/script/mypage/pwChange.js"></script>
+
+</html>

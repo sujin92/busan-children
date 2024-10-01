@@ -1,0 +1,538 @@
+#footer {
+  display: none;
+}
+
+/* 로그인 */
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #b0b0b084;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffa913;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px 0 30px;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.ortherInfo {
+  text-align: center;
+}
+
+.ortherInfo a {
+  font-size: 13px;
+  margin: 0 10px;
+  color: #939393;
+}
+
+/* 회원가입 */
+.joinConsent {
+  max-width: 900px;
+  margin: 160px auto;
+}
+
+.joinConsent h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.joinConsentInner > h2 {
+  font-size: 20px;
+  text-align: left;
+  border-bottom: 2px solid #ffa913;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.consentBox {
+  margin: 40px 0;
+}
+
+.consentBox > h3 {
+  margin-bottom: 10px;
+}
+
+.consentBox > p {
+  font-size: 14px;
+  line-height: 18px;
+  height: 200px;
+  overflow: scroll;
+  border: 1px solid #d5d5d5;
+  padding: 8px;
+  margin-bottom: 10px;
+  color: #939393;
+}
+
+.consentBox > div {
+  text-align: right;
+}
+
+.consentBox > div > label {
+  font-size: 15px;
+}
+
+.allAgreeBox {
+  margin: 10px 0 50px;
+}
+
+.allAgreeBox > label {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.joinConsentBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.joinConsentHidden {
+  max-width: 900px;
+  margin: 160px auto;
+}
+
+.joinConsentBtn > a {
+  display: flex;
+  margin: 20px;
+  background-color: #a5a5a5;
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.okAgree {
+  background-color: #ffa913 !important;
+}
+
+input {
+  accent-color: #ffa913;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 20px;
+}
+
+.emailCertifiedBar {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.joinConsent .joinConsentInner .form-group > label {
+  display: block;
+  width: 200px;
+}
+
+.form-group div {
+  display: flex;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+.el_input {
+  width: 250px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select {
+  width: 250px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.joinBtn {
+  background-color: #ffa913;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+
+.radioBtn {
+  width: 80px;
+}
+
+#emailOk {
+  display: block;
+}
+
+.el_ttl {
+  font-size: 16px;
+  display: block;
+  width: 200px;
+}
+
+input::placeholder {
+  color: #d4d4d4;
+}
+
+.el_input:disabled {
+  background-color: #f0f0f0;
+}
+
+.bl_stack {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.condition {
+  font-size: 12px;
+  color: #f18299;
+  margin-left: 10px;
+}
+
+.emailCertified,
+.emailCheck,
+.el_btn,
+.overlapCheck,
+.emailCheckOk,
+.overlapCheckOk {
+  border: none;
+  padding: 9px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #a5a5a5;
+  color: #fff;
+}
+
+.emailCheckOk,
+.overlapCheckOk {
+  display: none;
+  background-color: transparent;
+  color: #f18299;
+  padding: 9px 5px;
+}
+
+#roadAddressDetail {
+  margin-left: 6px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.joinSuccess {
+  text-align: center;
+}
+
+.joinSuccess > i {
+  font-size: 50px;
+  background-color: #ffa913;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  color: #fff;
+}
+
+.joinSuccess > h4 {
+  font-size: 26px;
+  font-weight: 200;
+}
+
+.joinSuccess > h4 > span {
+  font-weight: 700;
+}
+
+.joinSuccess > p {
+  font-size: 16px;
+  margin: 50px 0;
+}
+
+.joinSuccess > a {
+  padding: 10px 30px;
+  background-color: #ffa913;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.idfineInner {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px #b0b0b084;
+  border-radius: 20px;
+  padding: 70px 0;
+}
+
+.idfineInner > p {
+  font-size: 26px;
+  margin: 0 0 60px;
+}
+
+.idfineInner > p > span {
+  color: #ffa913;
+  font-weight: 900;
+}
+
+.idfineInner > .fineBtn,
+.idfineInner > .newPwBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.idfineInner > .fineBtn > a > p,
+.idfineInner > .newPwBtn > a > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  background-color: #ffa913;
+  margin: 0 20px;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid #ffa913;
+}
+
+.pwfineOther {
+  background-color: #fff !important;
+  color: #939393 !important;
+  border: 1px solid #ffa913;
+}
+
+.newPw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.newPw > label {
+  width: 150px;
+  text-align: left;
+}
+
+.newPwBtn {
+  margin-top: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 50px;
+  width: 20%;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.close-modal-btn {
+  border: none;
+  background-color: #ffa913;
+  color: #fff;
+  margin-top: 50px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .joinConsent {
+    width: 80%;
+  }
+  .allAgreeBox > label {
+    font-size: 14px;
+  }
+  .idfineInner {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-form h2 {
+    font-size: 18px;
+  }
+  .loginBtn {
+    font-size: 14px;
+  }
+  .login-form {
+    width: 400px;
+  }
+  .form-group:nth-of-type(4) {
+    padding-bottom: 40px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  .el_input {
+    width: 170px;
+  }
+  .joinConsent .joinConsentInner .form-group > label,
+  .el_ttl {
+    width: 100px;
+  }
+  .emailCertified,
+  .emailCheck,
+  .el_btn,
+  .overlapCheck,
+  .emailCheckOk,
+  .overlapCheckOk {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .condition {
+    position: absolute;
+    margin: 60px 0 0 100px;
+  }
+  .emailCertifiedBar {
+    margin-bottom: 36px;
+  }
+  .idfineInner > p {
+    font-size: 18px;
+  }
+
+  .joinConsent h1 {
+    font-size: 24px;
+  }
+  .joinConsentInner > h2 {
+    font-size: 18px;
+  }
+  .joinBtn {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    width: 80%;
+    padding: 20px;
+  }
+  .emailCertifiedBar {
+    flex-wrap: wrap;
+  }
+  .emailCertified,
+  .emailCheck,
+  .emailCheckOk,
+  .overlapCheck,
+  .overlapCheckOk {
+    margin: 10px 0 0 80px;
+  }
+  .condition {
+    margin: 110px 0 0 80px;
+  }
+  .joinConsent .joinConsentInner .form-group > label,
+  .el_ttl {
+    width: 80px;
+    font-size: 13px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  .el_input {
+    width: 150px;
+  }
+  .bl_stack--row {
+    flex-direction: column;
+    align-items: left;
+  }
+  .el_btn {
+    width: 150px;
+    margin: 10px 0 0 0;
+  }
+  .hp_txt-center {
+    width: 100% !important;
+  }
+  #roadAddressDetail {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  #roadAddress {
+    width: 100%;
+  }
+  .joinConsentInner div:nth-of-type(2),
+  .joinConsentInner div:nth-of-type(9) {
+    flex-wrap: wrap;
+  }
+
+  .radioBtn {
+    width: auto;
+  }
+  .radioBtn {
+    margin-right: 10px;
+  }
+}

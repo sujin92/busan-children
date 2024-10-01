@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/manager/membership.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+      <div id="subMain02"></div>
+      <div id="subMain03"></div>
+      <div id="subMain04"></div>
+      <div id="subMain05"></div>
+      <div id="subMain06"></div>
+      <div id="subMain07"></div>
+
+      <div id="subMain08"></div>
+
+      <div class="centerInner">
+        <div class="reservationList">
+          <h2>회원정보</h2>
+          <div>
+            <div class="coronationPrice">
+              <h3>아이디</h3>
+              <h3>이름</h3>
+              <h3>생년월일</h3>
+              <h3>휴대전화번호</h3>
+              <h3>상세보기</h3>
+            </div>
+            <div class="memberList" id="memberList"></div>
+          </div>
+        </div>
+
+        <div class="pageNumber" id="pageNumber">
+          <i class="fa-solid fa-angles-left" id="firstPage"></i>
+          <i class="fa-solid fa-chevron-left" id="prevPage"></i>
+          <div id="numbers">
+            <span id="currentPage"><a href="">1</a></span>
+          </div>
+          <i class="fa-solid fa-chevron-right" id="nextPage"></i>
+          <i class="fa-solid fa-angles-right" id="endPage"></i>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/src/script/mypage/managerPage/membership.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

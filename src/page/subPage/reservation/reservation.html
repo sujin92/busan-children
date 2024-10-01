@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/performance/performanceInfo.css" />
+    <link rel="stylesheet" href="/src/style/reservation/reservation02.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const token = sessionStorage.getItem("token"); // 또는 userId 등 로그인 확인을 위한 키값
+
+        // 로그인 상태 확인
+        if (!token) {
+          alert("로그인하셔야 예약이 가능합니다.");
+          window.location.href = "/src/page/mypage/login.html"; // 로그인 페이지로 리다이렉트
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+
+      <div id="subMain02"></div>
+
+      <div id="subMain03"></div>
+      <div id="subMain04"></div>
+      <div id="subMain05"></div>
+
+      <div class="reservationInner">
+        <div
+          class="coronationTxt"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <h2>예약자 정보 입력</h2>
+          <div class="personReservation">
+            <div>
+              <label for="customerId">예약자 아이디</label>
+              <input type="text" id="customerId" />
+              <button type="button" id="idCheck">아이디 체크</button>
+            </div>
+            <div>
+              <label for="customerEmail">예약자 이메일</label>
+              <input type="text" id="customerEmail" />
+            </div>
+          </div>
+
+          <div class="personReservation">
+            <div>
+              <label for="customerName">예약자 성함</label>
+              <input type="text" id="customerName" />
+            </div>
+            <div>
+              <label for="customerPhone">예약자 전화번호</label>
+              <input
+                type="text"
+                id="customerPhone"
+                placeholder="숫자만 입력하세요"
+              />
+            </div>
+          </div>
+
+          <h2>분류 선택</h2>
+          <div class="carousel"></div>
+
+          <h2>날짜 및 시간 선택</h2>
+          <div class="selectSchedule">
+            <div id="calendar02" class="calendar">
+              <div class="header2">
+                <div class="nav2">
+                  <button class="nav-btn go-prev" onclick="prevMonth()">
+                    &lt;
+                  </button>
+                  <div class="year-month"></div>
+                  <button class="nav-btn go-next" onclick="nextMonth()">
+                    &gt;
+                  </button>
+                </div>
+              </div>
+              <div class="main">
+                <div class="days">
+                  <div class="day">일</div>
+                  <div class="day">월</div>
+                  <div class="day">화</div>
+                  <div class="day">수</div>
+                  <div class="day">목</div>
+                  <div class="day">금</div>
+                  <div class="day">토</div>
+                </div>
+                <div class="dates"></div>
+              </div>
+            </div>
+            <div class="timeSelect">
+              <h3>시간 선택</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>선택</th>
+                    <th>회차</th>
+                    <th>시간</th>
+                    <th>예약 현황</th>
+                    <th>예약 가능 인원</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="totalPriceBox">
+            <h2>
+              <span class="performanceTitle"></span>
+              <span class="performanceDate"></span>
+              <span class="performanceRound"></span>
+            </h2>
+            <div class="discountedSelect">
+              <div>
+                <label for="target">대상</label>
+                <select name="target" id="target">
+                  <option value="targetSelect">선택하세요</option>
+                  <option value="adult">성인</option>
+                  <option value="teenager">청소년 (초중고)</option>
+                  <option value="child">아동</option>
+                </select>
+              </div>
+              <div>
+                <label for="discounted">할인요금</label>
+                <select name="discounted" id="discounted">
+                  <option value="targetSelect">선택하세요</option>
+                  <option value="normal">해당없음</option>
+                  <option value="national">국가유공자 할인 -2,000원</option>
+                  <option value="disabled">장애인 할인 -3,000원</option>
+                </select>
+              </div>
+            </div>
+            <div class="discountedSelect">
+              <p>
+                <span class="secondSale">대상</span> <em>/</em>
+                <span class="thirdSale">할인요금</span>
+              </p>
+              <p class="count">
+                <i class="fa-solid fa-minus"></i><em class="quantity">1</em
+                ><i class="fa-solid fa-plus"></i>
+              </p>
+              <div class="discountePrice">
+                <p class="totalPriceCheck">0원</p>
+                <button type="button" class="ticketAddBtn">추가</button>
+              </div>
+            </div>
+
+            <div class="discountedSelectAdd" style="display: none"></div>
+            <p class="reservationNotice">
+              *항목을 추가한 상태에서 다른 공연, 날짜, 시간을 선택하실 수
+              없습니다. 삭제 후 다른 공연을 선택해 주세요.
+            </p>
+          </div>
+          <div class="discountedSelect totalPrice">
+            <h3>총 상품 금액</h3>
+            <div>
+              <h4 class="totalPriceCheckTotal" style="display: none">0원</h4>
+              <p class="totalCount">
+                총 <span class="totalCountNumber">0</span>명
+              </p>
+              <h4 class="totalPriceCheckTotalAdd">0원</h4>
+            </div>
+          </div>
+          <button class="paymentBtn">예약완료</button>
+        </div>
+
+        <div class="reservationModal" id="reservationModal">
+          <div class="modalContent">
+            <h2>예약하시겠습니까?</h2>
+            <p>마이페이지에서 결제를 완료해야 최종 완료 됩니다.</p>
+            <button type="button" id="modalCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/greenBg.json"
+          class="pinkBg"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/green1280Bg.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/green1280.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/src/script/subpage/reservation/reservation.js"></script>
+  </body>
+</html>

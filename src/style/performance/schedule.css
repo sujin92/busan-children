@@ -1,0 +1,141 @@
+#subMain {
+  display: none;
+}
+
+#subMain02 {
+  display: block;
+}
+
+.tab > .performancSchedule {
+  background: linear-gradient(to top, #32ecd9 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #00c7b3;
+}
+
+.calendarParts > div {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0;
+}
+
+.lottie-container3 {
+  top: 15%;
+  right: 36vw;
+}
+
+.calendarParts > div > div {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1440px) {
+  .lottie-container3 {
+    right: 36.7vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .lottie-container3 {
+    right: 35vw;
+    top: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lottie-container3 {
+    right: 30vw;
+  }
+  .calendarBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calendar {
+    width: 90%;
+  }
+  .calendarInfoBox {
+    margin-left: 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendarParts h2 {
+    font-size: 20px;
+  }
+  .lottie-container3 {
+    right: 27%;
+  }
+
+  footer {
+    background-color: #00c7b3;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendarParts > div {
+    margin: 0;
+  }
+  .lottie-container3 {
+    top: 15%;
+  }
+  .year-month {
+    font-size: 14px;
+  }
+  .go-today {
+    font-size: 12px;
+  }
+  .calendar {
+    padding: 10px 10px 20px;
+    margin-top: 20px;
+  }
+  .category {
+    font-size: 7px;
+    padding: 2px 3px;
+  }
+  .date {
+    padding: 2px;
+  }
+  .calendarInfoBox {
+    flex-direction: column;
+  }
+  .calendarTitle {
+    width: 150px;
+  }
+  footer {
+    margin-top: 20px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

@@ -1,0 +1,425 @@
+#subMain,
+#subMain02,
+#subMain03,
+#subMain04,
+#subMain05,
+#subMain06 {
+  display: none;
+}
+
+.tab > .myPageInfo {
+  background: linear-gradient(to top, #c1c1c1 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #8a8a8a;
+}
+
+.centerInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.reservationList {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.reservationList h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.reservationList > div {
+  border-top: 2px solid #8a8a8a;
+}
+
+.reservationList > div > p {
+  margin-top: 20px;
+  color: #f18299;
+  text-align: right;
+}
+
+.reservationList > div .coronationPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.reservationList > div .coronationPrice h3,
+.reservationList > div .coronationPrice h4 {
+  width: 120px;
+  text-align: center;
+}
+
+.reservationList > div .coronationPrice h3:nth-of-type(3),
+.reservationList > div .coronationPrice h4:nth-of-type(3),
+.reservationList > div .coronationPrice h3:nth-of-type(4),
+.reservationList > div .coronationPrice h4:nth-of-type(4) {
+  width: 200px;
+}
+
+.reservationList > div .coronationPrice h3:nth-of-type(2),
+.reservationList > div .coronationPrice h4:nth-of-type(2) {
+  width: 240px;
+}
+
+.reservationList > div .coronationPrice > h3 {
+  font-weight: 800;
+}
+
+.reservationList > div .coronationPrice h4 > span {
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: #82b378;
+  color: #fff;
+  font-size: 12px;
+}
+
+.reservationList > div .coronationPrice h4 > a {
+  border: 1px solid #c1c1c1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.reservationList > div .coronationPrice h4 > a:hover {
+  background-color: #ffaa14;
+  border: 1px solid #ffaa14;
+  color: #fff;
+}
+
+.pageNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageNumber #numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageNumber > i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#numbers span a {
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#numbers span.active a {
+  color: #fff;
+  background-color: #8a8a8a;
+}
+
+/* 상세페이지 */
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "NanumSquareNeo";
+  font-size: 14px;
+  overflow: hidden;
+  padding: 17px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "NanumSquareNeo";
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 17px 5px;
+  word-break: normal;
+}
+.tg .tg-li6d {
+  border-color: #e0e0e0;
+  text-align: center;
+  vertical-align: top;
+  font-size: 16px;
+}
+.tg .tg-xxcc {
+  border-color: #e0e0e0;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+tr {
+  position: relative;
+  font-family: "NanumSquareNeo";
+}
+
+.reservationState > p {
+  position: absolute;
+  width: 80px;
+  padding: 5px;
+  font-size: 13px;
+  background-color: #82b378;
+  border-radius: 20px;
+  color: #fff;
+  top: 50%;
+  left: 29.7%;
+  transform: translateY(-50%);
+}
+
+.reservationDetailBtn {
+  text-align: center;
+}
+
+.reservationDetailBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  margin: 10px 20px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.reservationDetailBtn .goList a,
+.paymentCancleBtn {
+  padding: 10px 35px;
+  background-color: #a7a7a7;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  margin: 10px 20px;
+  color: #fff;
+  margin: 0 10px;
+  margin-right: 30px;
+}
+
+.btn_open,
+.cancleBtn,
+.paymentGo {
+  color: #fff;
+  padding: 10px 35px;
+  background-color: #a7a7a7;
+  border-radius: 5px;
+}
+
+.paymentGo {
+  background-color: #ffaa14;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.pop_wrap {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #5353536f;
+}
+
+.pop_wrap:after {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.pop_wrap .pop_inner {
+  display: inline-block;
+  padding: 40px 80px;
+  background: #fff;
+  width: 240px;
+  vertical-align: middle;
+  font-size: 18px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.pop_wrap .pop_inner .dsc {
+  margin-bottom: 40px;
+}
+
+.pop_wrap .pop_inner .dsc i {
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffaa14;
+  margin: 10px 0 20px;
+}
+
+.pop_wrap .pop_inner button {
+  width: 80px;
+  border: none;
+  color: #fff;
+  padding: 7px;
+  margin: 0 5px 15px;
+  border-radius: 5px;
+  font-family: "NanumSquareNeo";
+  cursor: pointer;
+}
+
+.pop_wrap .pop_inner .btn_close {
+  background-color: #8a8a8a;
+}
+
+.pop_wrap .pop_inner .btn_ok {
+  background-color: #ffaa14;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 1280px) {
+  .centerInner {
+    width: 80%;
+  }
+  table {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .tg .tg-li6d,
+  .tg .tg-xxcc {
+    font-size: 14px;
+  }
+  footer {
+    background-color: #8a8a8a;
+  }
+  .reservationList h2 {
+    font-size: 20px;
+  }
+  .reservationList > div .coronationPrice > h3:nth-of-type(5),
+  .reservationList > div .coronationPrice > h4:nth-of-type(5) {
+    display: none;
+  }
+  .reservationList > div > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservationDetailBtn .goList a,
+  .btn_open {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+
+  .reservationList h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .reservationList > div {
+    width: 100%;
+  }
+  .reservationList > div .coronationPrice h3:nth-of-type(3),
+  .reservationList > div .coronationPrice h4:nth-of-type(3),
+  .reservationList > div .coronationPrice h3:nth-of-type(4),
+  .reservationList > div .coronationPrice h4:nth-of-type(4),
+  .reservationList > div .coronationPrice h3:nth-of-type(5),
+  .reservationList > div .coronationPrice h4:nth-of-type(5) {
+    display: none;
+  }
+  .reservationList > div .coronationPrice h3:nth-of-type(1),
+  .reservationList > div .coronationPrice h4:nth-of-type(1),
+  .reservationList > div .coronationPrice h3:nth-of-type(2),
+  .reservationList > div .coronationPrice h4:nth-of-type(2),
+  .reservationList > div .coronationPrice h3:nth-of-type(6),
+  .reservationList > div .coronationPrice h4:nth-of-type(6) {
+    width: 33%;
+  }
+  .pageNumber > i,
+  #numbers span a {
+    font-size: 13px;
+  }
+  #numbers span a {
+    margin: 0 5px;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+  .reservationList > div > p {
+    font-size: 10px;
+    text-align: left;
+  }
+  .cancleBtn {
+    font-size: 13px;
+    padding: 8px 15px !important;
+  }
+  .reservationDetailBtn button {
+    margin: 0;
+  }
+  .reservationDetailBtn .goList a {
+    margin: 0;
+  }
+  .reservationList {
+    margin-bottom: 50px;
+  }
+}

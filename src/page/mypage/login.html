@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한형석 자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/mypage.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <div class="innerWrap">
+      <div class="login-form">
+        <h2>로그인</h2>
+        <form action="/src/page/mypage/info.html" method="post">
+          <input type="text" name="username" placeholder="아이디" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="비밀번호"
+            required
+          />
+          <input type="submit" value="로그인" class="loginBtn" />
+        </form>
+        <div class="ortherInfo">
+          <a href="./join.html">회원가입</a>
+          <a href="./idfine.html">아이디 찾기</a>
+          <a href="./pwfine.html">비밀번호 찾기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+  </body>
+
+  <script src="/src/script/header.js"></script>
+  <script src="/src/script/common.js"></script>
+  <script src="/src/script/mypage/login.js"></script>
+</html>

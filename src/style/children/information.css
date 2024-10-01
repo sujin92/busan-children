@@ -1,0 +1,242 @@
+.tab > .information {
+  background: linear-gradient(to top, #fdacbc 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.inforInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.innerContent > h2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.innerContent:nth-of-type(2) > h2 {
+  margin-top: 50px;
+}
+
+.innerContent .inforInnerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerContent .inforInnerContent > div {
+  width: 22%;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #d0d0d084;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 5px 25px;
+  margin-bottom: 60px;
+}
+
+.innerContent .inforInnerContent > div h3 {
+  font-size: 17px;
+  margin: 20px 0 15px;
+  font-weight: 700;
+}
+
+.innerContent .inforInnerContent > div p {
+  color: #8a8a8a;
+  line-height: 22px;
+  height: 50px;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 60px;
+}
+.tg td {
+  border-color: rgb(212, 212, 212);
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: rgb(212, 212, 212);
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-amwm {
+  font-weight: 500;
+  text-align: center;
+  font-size: 17px;
+  border-left: none;
+  border-right: none;
+  padding: 15px;
+}
+.amwmborder {
+  border-right: 1px solid rgb(212, 212, 212) !important;
+}
+.tg .tg-0lax {
+  text-align: left;
+  border-right: none;
+  font-size: 17px;
+  color: #8a8a8a;
+  padding: 15px;
+}
+
+.careInfo {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #d0d0d084;
+  border-radius: 15px;
+  text-align: left;
+  padding: 20px;
+}
+
+.careInfo li {
+  color: #8a8a8a;
+  margin: 15px;
+  text-indent: -22px;
+  margin-left: 22px;
+  line-height: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .innerContent > h2 {
+    font-size: 20px;
+  }
+  .innerContent .inforInnerContent > div p {
+    font-size: 1.2vw;
+  }
+  .tg .tg-amwm,
+  .tg .tg-0lax {
+    font-size: 1.4vw !important;
+  }
+  table {
+    width: 100% !important;
+  }
+  .careInfo li {
+    font-size: 1.4vw;
+  }
+  .lottie-container7 {
+    bottom: 80px;
+  }
+  .innerContent .inforInnerContent > div h3 {
+    font-size: 1.4vw;
+  }
+  footer {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inforInner {
+    width: 90% !important;
+  }
+  .innerContent > h2 {
+    font-size: 18px;
+  }
+  .innerContent .inforInnerContent > div h3 {
+    font-size: 2vw;
+  }
+  .innerContent .inforInnerContent > div p {
+    font-size: 12px;
+  }
+
+  table {
+    width: 100% !important;
+  }
+
+  .lottie-container7 {
+    bottom: 130px;
+    width: 210px;
+  }
+  footer {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inforInner {
+    margin: 50px auto 0;
+  }
+  .innerContent > h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .innerContent .inforInnerContent {
+    flex-wrap: wrap;
+  }
+  .innerContent .inforInnerContent > div {
+    width: 45%;
+    padding: 15px 5px 10px;
+    margin-bottom: 20px;
+  }
+  .inforInnerContent div img {
+    width: 40px;
+  }
+  .innerContent .inforInnerContent > div h3 {
+    font-size: 12px;
+  }
+  .innerContent .inforInnerContent > div p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .innerContent:nth-of-type(2) > h2 {
+    margin-top: 30px;
+  }
+  .careInfo li {
+    margin: 11px;
+    font-size: 10px;
+    text-indent: -14px;
+    line-height: 15px;
+  }
+  footer {
+    margin-top: 100px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

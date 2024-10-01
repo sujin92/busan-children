@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/center/notice.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+      <div id="subMain02"></div>
+      <div id="subMain03"></div>
+      <div id="subMain04"></div>
+      <div id="subMain05"></div>
+
+      <div id="subMain06"></div>
+
+      <div class="centerInner">
+        <div
+          class="centerInnerTop"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          <div class="noticeBar">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="검색어를 입력하세요"
+            />
+            <button id="searchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <a href="./noticeWrite.html" class="noticeWrite managerWrite"
+            >게시글 작성</a
+          >
+        </div>
+
+        <div
+          class="noticeBoard"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
+          <table>
+            <thead>
+              <tr>
+                <th class="thRound01">번호</th>
+                <th>구분</th>
+                <th>제목</th>
+                <th class="thRound02">등록일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="noticeIndex"></td>
+                <td id="group"></td>
+                <td id="title">
+                  <a href="./noticeDetail.html"></a>
+                </td>
+                <td id="createDate"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="performanceContent"></div>
+        <div class="pageNumber" id="pageNumber">
+          <i class="fa-solid fa-angles-left" id="firstPage"></i>
+          <i class="fa-solid fa-chevron-left" id="prevPage"></i>
+          <div id="numbers">
+            <span id="currentPage"><a href="">1</a></span>
+          </div>
+          <i class="fa-solid fa-chevron-right" id="nextPage"></i>
+          <i class="fa-solid fa-angles-right" id="endPage"></i>
+        </div>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/puppleBg.json"
+          class="pinkBg"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/pupple1280Bg.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/pupple1280.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/src/script/subpage/center/notice.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

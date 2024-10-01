@@ -1,0 +1,246 @@
+#subMain,
+#subMain02,
+#subMain03,
+#subMain04,
+#subMain05 {
+  display: none;
+}
+
+.tab > .location {
+  background: linear-gradient(to top, #aaa5e7 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #908bcc;
+}
+
+.centerInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.root_daum_roughmap .wrap_controllers {
+  background-color: #908bcc !important;
+}
+.root_daum_roughmap .wrap_controllers .tit_controllers img {
+  display: none !important;
+}
+.root_daum_roughmap .wrap_controllers .wrap_btn_roadview .txt {
+  color: #fff !important;
+}
+.root_daum_roughmap_landing {
+  border-radius: 12px;
+  border: none;
+}
+
+.locationInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 50px;
+}
+
+.locationInner > img {
+  margin: 0 auto;
+}
+
+.locationInner > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  text-align: left;
+}
+
+.locationInner > div > div {
+  width: 50%;
+  margin: 20px 0;
+  display: flex;
+}
+
+.locationInner > div > div > i {
+  color: #908bcc;
+}
+
+.locationInner > div > div > span {
+  display: inline-block;
+  width: 80px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.locationBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationBottom .locationContent {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #b0b0b084;
+  border-radius: 10px;
+  text-align: left;
+  width: 25%;
+}
+
+.locationBottom .locationContent > div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  align-items: center;
+}
+
+.locationBottom .locationContent > div h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.locationBottom .locationContent > div i {
+  font-size: 30px;
+  color: #908bcc;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #b0b0b084;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationBottom .locationContent > h4 {
+  margin: 30px 0 20px;
+  color: #908bcc;
+}
+
+.locationBottom .locationContent > p {
+  line-height: 20px;
+}
+
+@media (max-width: 1280px) {
+  .lottie-container5 {
+    display: none;
+  }
+  .centerInner {
+    width: 80%;
+  }
+  .root_daum_roughmap {
+    width: 100% !important;
+  }
+  .locationBottom {
+    margin-bottom: 190px;
+  }
+  .locationBottom .locationContent {
+    padding: 1vw;
+    width: 20vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .centerInner {
+    width: 90%;
+  }
+  .locationInner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .locationInner > img {
+    margin: 40px 0;
+    width: 250px;
+  }
+  .locationInner > div {
+    width: 100%;
+  }
+  .locationInner > div > div {
+    justify-content: center;
+  }
+  .locationBottom .locationContent {
+    width: 25vw;
+  }
+  .locationBottom .locationContent > div h3 {
+    font-size: 16px;
+  }
+  .locationContent > p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .locationBottom {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .locationInner > div > div > span,
+  .locationInner > div > div > p,
+  .locationBottom .locationContent > div h3,
+  .locationBottom .locationContent > h4 {
+    font-size: 14px;
+  }
+
+  footer {
+    background-color: #908bcc;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .centerInner {
+    margin: 30px auto;
+  }
+  .locationInner > img {
+    width: 200px;
+    margin: 20px 0;
+  }
+  .locationInner > div > div {
+    width: 100%;
+  }
+  .locationInner > div > div {
+    justify-content: left;
+    margin: 10px 0;
+  }
+  .locationBottom {
+    flex-direction: column;
+  }
+  .locationBottom .locationContent {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    margin-top: 30px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

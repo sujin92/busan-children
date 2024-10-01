@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/performance/performanceInfo.css" />
+    <link rel="stylesheet" href="/src/style/coronation/coronation.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+
+      <div id="subMain02"></div>
+
+      <div id="subMain03"></div>
+
+      <div
+        class="topBg"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="200"
+      >
+        <img
+          src="/public/img/sub/children/topBg.png"
+          alt="background"
+          class="topBg1"
+        />
+      </div>
+
+      <div
+        class="coronationInner"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="500"
+      >
+        <div class="coronationInnerTop">
+          <h2>어린이를 위해 맞춤 설계된 아동 전용 극장</h2>
+          <p>
+            160석 규모의 객석과 최적의 음향과 조명효과를 갖춘 극장으로 최적의
+            관람환경을 제공하고 있습니다.
+          </p>
+          <img
+            class="coronationImage"
+            src="/public/img/sub/coronation/coronation01.jpg"
+            alt="극장 이미지"
+          />
+          <div class="imgAll">
+            <img
+              src="/public/img/sub/coronation/coronation02.jpg"
+              width="370"
+              alt="극장 이미지"
+            />
+            <img
+              src="/public/img/sub/coronation/coronation03.jpg"
+              width="370"
+              alt="극장 이미지"
+            />
+            <img
+              src="/public/img/sub/coronation/coronation04.jpg"
+              width="370"
+              alt="극장 이미지"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/yellowBg.json"
+          class="pinkBg pinkBgWeb"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/yellow1280Bg.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/yellow1280.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      AOS.init();
+
+      // 모든 이미지에 클릭 이벤트 추가
+      document.querySelectorAll(".imgAll img").forEach(function (img) {
+        img.addEventListener("click", function () {
+          // 클릭된 이미지의 src 속성을 coronationImage의 src 속성으로 설정
+          document.querySelector(".coronationImage").src = this.src;
+        });
+      });
+    </script>
+  </body>
+</html>

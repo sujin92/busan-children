@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src//style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/performance/schedule.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+
+      <div id="subMain02"></div>
+
+      <div class="performanceInner">
+        <section class="section03">
+          <div class="calendarParts">
+  <div class="titleLottie">
+              <h2>이달의 일정</h2>
+              <div class="lottie-container3">
+                <lottie-player src="/public/lottie/schedule.json" class="schedule" background="transparent" speed="0.7" loop autoplay></lottie-player>
+            </div>
+  </div>
+            <div>
+              <div class="calendarBox">
+                <div id="calendar" class="calendar" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <div class="header2">
+                    <div class="nav2">
+                      <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                      <div class="year-month"></div>
+                      <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                    </div>
+                    <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                  </div>
+                  <div class="main">
+                    <div class="days">
+                      <div class="day">일</div>
+                      <div class="day">월</div>
+                      <div class="day">화</div>
+                      <div class="day">수</div>
+                      <div class="day">목</div>
+                      <div class="day">금</div>
+                      <div class="day">토</div>
+                    </div>
+                    <div class="dates">
+                  </div>
+                </div>
+              </div>
+              <div class="calendarInfoBox" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <div class="noSelect">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <p>날짜를 선택해 주세요</p>
+                </div>
+                <div class="calendarBoxItem">
+                  <div>
+                    <a href="../reservation/reservation.html">
+                      <img
+                        src="/public/img/main/testImage.png"
+                        alt="공연"
+                        class="thumbnail"
+                      />
+  
+                      <div class="calendarPartsRight">
+                        <strong class="genre"></strong>
+                        <h3 class="calendarTitle"></h3>
+                        <p>
+                          <em>내용</em>
+                          <span class="calendarSubTitle"></span>
+                        </p>
+                        <p>
+                          <em>기간</em>
+                          <span class="calendarStartDate"></span> ~
+                          <span class="calendarEndtDate"></span>
+                        </p>
+                        <p>
+                          <em>연령</em>
+                          <span class="calendarRating"></span>
+                        </p>
+                        <p>
+                          <em>가격</em>
+                          <span class="calendarPrice"></span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="calendarBoxItem02">
+                  <div>
+                    <a href="../reservation/reservation.html">
+                      <img
+                        src="/public/img/main/testImage.png"
+                        alt="공연"
+                        class="thumbnail"
+                      />
+  
+                      <div class="calendarPartsRight">
+                        <strong class="genre"></strong>
+                        <h3 class="calendarTitle"></h3>
+                        <p>
+                          <em>내용</em>
+                          <span class="calendarSubTitle"></span>
+                        </p>
+                        <p>
+                          <em>기간</em>
+                          <span class="calendarStartDate"></span> ~
+                          <span class="calendarEndtDate"></span>
+                        </p>
+                        <p>
+                          <em>연령</em>
+                          <span class="calendarRating"></span>
+                        </p>
+                        <p>
+                          <em>가격</em>
+                          <span class="calendarPrice"></span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/blueBg.json"
+          class="pinkBg pinkBgWeb"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/blue1280Bg.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/blue1280.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="/assets/calendar/calendar.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

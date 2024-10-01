@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@portone/browser-sdk": "^0.0.9",
+    "aos": "^2.3.4",
+    "quill": "^2.0.0",
+    "swiper": "^11.0.5"
+  }
+}

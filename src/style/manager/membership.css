@@ -1,0 +1,236 @@
+#subMain,
+#subMain02,
+#subMain03,
+#subMain04,
+#subMain05,
+#subMain06,
+#subMain07 {
+  display: none;
+}
+
+.tab > .membership {
+  background: linear-gradient(to top, #c1c1c1 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #8a8a8a;
+}
+
+.centerInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.reservationList {
+  text-align: left;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.reservationList h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.reservationList > div {
+  border-top: 2px solid #8a8a8a;
+}
+
+.memberList {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+.reservationList > div .memberList h3,
+.reservationList > div .memberList h4 {
+  width: 120px;
+  text-align: center;
+}
+
+.reservationList > div .memberList h3:nth-of-type(2),
+.reservationList > div .memberList h4:nth-of-type(2),
+.reservationList > div .memberList h3:nth-of-type(3),
+.reservationList > div .memberList h4:nth-of-type(3),
+.reservationList > div .memberList h3:nth-of-type(4),
+.reservationList > div .memberList h4:nth-of-type(4) {
+  width: 240px;
+}
+
+.coronationPriceaa {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.reservationList > div .coronationPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.reservationList > div .coronationPrice h3,
+.reservationList > div .coronationPrice h4 {
+  width: 120px;
+  text-align: center;
+}
+
+.reservationList > div .coronationPrice h3:nth-of-type(2),
+.reservationList > div .coronationPrice h4:nth-of-type(2),
+.reservationList > div .coronationPrice h3:nth-of-type(3),
+.reservationList > div .coronationPrice h4:nth-of-type(3),
+.reservationList > div .coronationPrice h3:nth-of-type(4),
+.reservationList > div .coronationPrice h4:nth-of-type(4) {
+  width: 240px;
+}
+
+.reservationList > div .coronationPrice > h3 {
+  font-weight: 800;
+}
+
+.reservationList > div .memberList h4 > a {
+  border: 1px solid #c1c1c1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.reservationList > div .memberList h4 > a:hover {
+  background-color: #ffaa14;
+  border: 1px solid #ffaa14;
+  color: #fff;
+}
+
+.pageNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageNumber > i {
+  padding: 10px;
+  cursor: pointer;
+  color: #5c5c5c;
+}
+
+#numbers {
+  display: flex;
+}
+
+#numbers > span a {
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  font-weight: 700;
+}
+
+.page-number.active a {
+  background-color: #828282;
+  color: white;
+  border-radius: 50%;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 1280px) {
+  .centerInner {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservationList h2 {
+    font-size: 20px;
+  }
+
+  .pageNumber > i,
+  #numbers > span a {
+    font-size: 1.7vw;
+  }
+  footer {
+    background-color: #989898;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservationList > div .coronationPrice h3:nth-of-type(3),
+  .reservationList > div .memberList h4:nth-of-type(3),
+  .reservationList > div .coronationPrice h3:nth-of-type(4),
+  .reservationList > div .memberList h4:nth-of-type(4) {
+    display: none !important;
+  }
+  .reservationList > div .coronationPrice h3:nth-of-type(2),
+  .reservationList > div .memberList h4:nth-of-type(2),
+  .reservationList > div .coronationPrice h3:nth-of-type(3),
+  .reservationList > div .memberList h4:nth-of-type(3),
+  .reservationList > div .coronationPrice h3:nth-of-type(4),
+  .reservationList > div .memberList h4:nth-of-type(4) {
+    width: 33%;
+  }
+  .reservationList > div .memberList h4 > a {
+    font-size: 10px;
+  }
+  .pageNumber > i,
+  #numbers > span a {
+    font-size: 13px;
+  }
+  #numbers > span a {
+    margin: 0 5px;
+  }
+  .reservationList {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

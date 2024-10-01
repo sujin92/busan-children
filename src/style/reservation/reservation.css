@@ -1,0 +1,175 @@
+#subMain,
+#subMain02,
+#subMain03,
+#subMain04 {
+  display: none;
+}
+
+.tab > .reservationInfo {
+  background: linear-gradient(to top, #9cdd8f 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #82b378;
+}
+
+.reservationInner {
+  width: 1200px;
+  margin: 80px auto 0;
+}
+
+.coronationTxt {
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.coronationTxt:nth-of-type(3) {
+  margin-bottom: 0;
+}
+
+.coronationTxt h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.coronationTxt > div {
+  border-top: 1px solid #82b378;
+}
+
+.coronationTxt > div > p {
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.coronationTxt > div > p em {
+  font-size: 14px;
+  margin-left: 10px;
+  color: hsl(348, 100%, 50%);
+}
+
+.coronationTxt > div > p > span {
+  margin: 0 70px 0 10px;
+  display: inline-block;
+  width: 150px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.coronationTxt .coronationStep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coronationTxt .coronationStep > div {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 1px 1px 15px #dddddd84;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.coronationTxt .coronationStep > div h3 {
+  font-family: "MBC1961GulimM";
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.coronationTxt > div .coronationPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.coronationTxt > div .coronationPrice h3,
+.coronationTxt > div .coronationPrice h4 {
+  width: 300px;
+  text-align: center;
+}
+
+.coronationTxt > div .coronationPrice > h3,
+.coronationTxt > div .coronationPrice h4 > span {
+  font-weight: 800;
+}
+
+@media (max-width: 1280px) {
+  .reservationInner {
+    width: 80%;
+  }
+  .lottie-container5 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .coronationTxt h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .coronationTxt > div > p > span {
+    font-size: 14px;
+    width: 100px;
+  }
+  .coronationTxt > div > p {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+  footer {
+    margin-top: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coronationTxt h2 {
+    font-size: 18px;
+  }
+  .playInner > div .leftContent span {
+    font-size: 70px;
+    top: -40px;
+  }
+  .music {
+    top: -100px;
+  }
+
+  footer {
+    background-color: #82b378;
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coronationTxt h2 {
+    font-size: 16px;
+  }
+  .coronationTxt {
+    margin-bottom: 40px;
+  }
+  .reservationInner {
+    margin: 40px auto 0;
+  }
+  .coronationTxt > div > p > span {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: auto;
+    color: #82b378;
+  }
+  .coronationTxt > div > p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 32px;
+    position: relative;
+  }
+  footer {
+    margin-top: 100px;
+  }
+}

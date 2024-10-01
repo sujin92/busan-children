@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src//style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/children/flooGuide.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+      <div id="subMain02"></div>
+
+      <div
+        class="topBg"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="200"
+      >
+        <img
+          src="/public/img/sub/children/topBg.png"
+          alt="background"
+          class="topBg1"
+        />
+      </div>
+
+      <div
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="200"
+        class="topBgTop"
+      >
+        <img
+          src="/public/img/sub/children/topBg3.png"
+          alt="background"
+          class="topBg3"
+        />
+      </div>
+
+      <div class="inforInner">
+        <div
+          class="innerContent"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="200"
+        >
+          <ul class="tabs">
+            <li onclick="showTab(1)">1층</li>
+            <li onclick="showTab(2)">2층</li>
+          </ul>
+
+          <div id="tab1" class="content">
+            <img
+              src="/public/img/sub/children/floor01.png"
+              alt="1f"
+              width="830"
+            />
+
+            <div class="floorImg">
+              <h3>1층 시설안내</h3>
+              <div class="floor1f">
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor01_01.jpg"
+                    alt="활기찬 자유아동 운동회"
+                  />
+                  <p>1. 활기찬 자유아동 운동회</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor01_02.jpg"
+                    alt="노래로 펼치는 독립역사"
+                  />
+                  <p>2. 노래로 펼치는 독립역사</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor01_03.jpg"
+                    alt="인포메이션 운영지원실"
+                  />
+                  <p>3. 인포메이션 운영지원실</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor01_04.jpg"
+                    alt="역사퍼즐 미디어아트"
+                  />
+                  <p>4. 역사퍼즐 미디어아트</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor01_05.jpg"
+                    alt="사무실"
+                  />
+                  <p>5. 사무실</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab2" class="content hidden">
+            <img
+              src="/public/img/sub/children/floor02.png"
+              alt="2f"
+              width="830"
+            />
+
+            <div class="floorImg">
+              <h3>2층 시설안내</h3>
+              <div class="floor1f">
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor02_01.jpg"
+                    alt="모래로 만드는 세계"
+                  />
+                  <p>1. 모래로 만드는 세계</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor02_02.jpg"
+                    alt="색동야학원 오락실"
+                  />
+                  <p>2. 색동야학원 오락실</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor02_03.jpg"
+                    alt="인포메이션 운영지원실"
+                  />
+                  <p>3. 인포메이션 운영지원실</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor02_04.jpg"
+                    alt="LED 디지털 갤러리"
+                  />
+                  <p>4. LED 디지털 갤러리</p>
+                </div>
+                <div>
+                  <img
+                    src="/public/img/sub/children/floor02_05.jpg"
+                    alt="공연장"
+                  />
+                  <p>5. 공연장</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/pinkBg.json"
+          class="pinkBg pinkBgWeb"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/pink1080.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/pink1280Bg.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="/src/script/subpage/tab.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

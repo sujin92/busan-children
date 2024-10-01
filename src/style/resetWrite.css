@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: "NanumSquareNeo";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot");
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff2")
+      format("woff2"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff")
+      format("woff"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumSquareNeo";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot");
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff2")
+      format("woff2"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff")
+      format("woff"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumSquareNeo";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot");
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff2")
+      format("woff2"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff")
+      format("woff"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumSquareNeo";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot");
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff2")
+      format("woff2"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff")
+      format("woff"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumSquareNeo";
+  font-weight: 900;
+  font-style: normal;
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot");
+  src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff2")
+      format("woff2"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff")
+      format("woff"),
+    url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MBC1961GulimM";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961GulimM.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjo.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjo.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjo.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjo.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjo.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumMyeongjo/NanumMyeongjoExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn {
+  font-size: 100%;
+  font: inherit;
+  font-family: "NanumSquareNeo";
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #212121;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #dfdfdf;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(93, 93, 93, 0.1);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/myPageInfo/myPageInfo.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+      <div id="subMain02"></div>
+      <div id="subMain03"></div>
+      <div id="subMain04"></div>
+      <div id="subMain05"></div>
+      <div id="subMain06"></div>
+
+      <div id="subMain07"></div>
+
+      <div class="centerInner">
+        <div class="reservationList">
+          <h2>예약 상세정보</h2>
+          <div>
+            <table class="tg" style="table-layout: fixed; width: 1200px">
+              <colgroup>
+                <col style="width: 200px" />
+                <col style="width: 400px" />
+                <col style="width: 200px" />
+                <col style="width: 400px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="tg-xxcc">예약상태</th>
+                  <th class="tg-li6d reservationState" colspan="3">
+                    <p></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-xxcc">신청자명</td>
+                  <td class="tg-li6d customerName"></td>
+                  <td class="tg-xxcc">전화번호</td>
+                  <td class="tg-li6d customerPhone"></td>
+                </tr>
+                <tr>
+                  <td class="tg-xxcc">공연 이름</td>
+                  <td class="tg-li6d performanceTitle"></td>
+                  <td class="tg-xxcc">공연 시간</td>
+                  <td class="tg-li6d performanceTime"></td>
+                </tr>
+                <tr>
+                  <td class="tg-xxcc">공연일자</td>
+                  <td class="tg-li6d performanceDate"></td>
+                  <td class="tg-xxcc">신청인원(명)</td>
+                  <td class="tg-li6d reservationCount"></td>
+                </tr>
+                <tr>
+                  <td class="tg-xxcc">충 금액(원)</td>
+                  <td class="tg-li6d totalAmount"></td>
+                  <td class="tg-xxcc">예약일자</td>
+                  <td class="tg-li6d reservationDate"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="reservationDetailBtn">
+          <button class="paymentCancle">
+            <a href="./reservation.html" class="paymentCancleBtn">결제취소</a>
+          </button>
+        </div>
+      </div>
+
+      <div id="pop_info_1" class="pop_wrap">
+        <div class="pop_inner">
+          <p class="dsc">
+            <i class="fa-solid fa-exclamation"></i><br />결제를
+            취소하시겠습니까?
+          </p>
+          <button type="button" class="btn_close">아니오</button>
+          <button type="button" class="btn_ok">예</button>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/src/script/mypage/mypageInfo/reservationDetailComplete.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

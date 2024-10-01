@@ -1,0 +1,386 @@
+#subMain,
+#subMain02,
+#subMain03,
+#subMain04,
+#subMain05,
+#subMain06 {
+  display: none;
+}
+
+.tab > .member,
+.membership {
+  background: linear-gradient(to top, #c1c1c1 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #8a8a8a;
+}
+
+.centerInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.reservationList {
+  text-align: left;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.reservationList h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.withdrawalBtn {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  border: 1px solid #ff0000;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.reservationList > div {
+  border-top: 2px solid #8a8a8a;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 20px;
+}
+
+form label {
+  display: block;
+  width: 200px;
+}
+
+.form-group div {
+  display: flex;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+.el_input {
+  width: 250px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select {
+  width: 250px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.joinBtn {
+  background-color: #ffa913;
+  color: #fff;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+}
+
+.radioBtn {
+  width: 80px;
+}
+
+#emailOk {
+  display: block;
+}
+
+.el_ttl {
+  font-size: 16px;
+  display: block;
+  width: 200px;
+}
+
+input::placeholder {
+  color: #d4d4d4;
+}
+
+.el_input:disabled {
+  background-color: #f0f0f0;
+}
+
+.bl_stack {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.condition {
+  font-size: 12px;
+  color: #f18299;
+  margin-left: 10px;
+}
+
+.emailCertified,
+.el_btn,
+.overlapCheck {
+  border: none;
+  padding: 9px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #a5a5a5;
+  color: #fff;
+}
+
+#roadAddressDetail {
+  margin-left: 6px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 팝업 */
+.pop_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0;
+  text-align: center;
+}
+
+.pop_wrap:after {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.pop_wrap .pop_inner {
+  display: inline-block;
+  padding: 40px 80px;
+  background: #fff;
+  width: 250px;
+  vertical-align: middle;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.pop_wrap .pop_inner .dsc {
+  margin-bottom: 40px;
+}
+
+.pop_wrap .pop_inner .dsc i {
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffaa14;
+  margin: 10px 0 20px;
+}
+
+.pop_wrap .pop_inner button {
+  width: 80px;
+  border: none;
+  color: #fff;
+  padding: 7px;
+  margin: 0 5px 15px;
+  border-radius: 5px;
+}
+
+.pop_wrap .pop_inner .btn_close {
+  background-color: #8a8a8a;
+}
+
+.pop_wrap .pop_inner .btn_ok {
+  background-color: #ffaa14;
+}
+
+.emailCheck {
+  border: none;
+  padding: 9px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #a5a5a5;
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 50px;
+  width: 20%;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.close-modal-btn {
+  border: none;
+  background-color: #ffa913;
+  color: #fff;
+  margin-top: 50px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.memberFooter > footer {
+  margin-top: 180px;
+}
+
+@media (max-width: 1280px) {
+  .centerInner {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  form label,
+  .el_ttl {
+    width: 120px;
+  }
+  .reservationList h2 {
+    font-size: 20px;
+  }
+  #roadAddressDetail {
+    margin: 10px 0 0 0;
+  }
+  footer {
+    background-color: #8a8a8a;
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservationList h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  form label,
+  .el_ttl {
+    font-size: 13px;
+  }
+  .form-group p {
+    font-size: 13px;
+  }
+  .withdrawalBtn {
+    top: -5px;
+  }
+  .form-group,
+  .bl_stack {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  form label {
+    font-weight: 600;
+  }
+  form label,
+  .form-group p {
+    width: 100%;
+  }
+
+  .form-group p {
+    margin-top: 15px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  .el_input {
+    margin-top: 15px;
+  }
+  .condition {
+    font-size: 10px !important;
+    margin-left: 0;
+  }
+  .el_btn,
+  #roadAddressDetail {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+  }
+  .joinBtn {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  .pop_wrap .pop_inner {
+    padding: 15px;
+  }
+
+  footer {
+    margin-top: 50px;
+    padding: 15px 2vw;
+    background-color: #8a8a8a;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

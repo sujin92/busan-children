@@ -1,0 +1,175 @@
+#subMain,
+#subMain02,
+#subMain03 {
+  display: none;
+}
+
+.tab > .playReserVation {
+  background: linear-gradient(to top, #96d4f3 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #96d4f3;
+}
+
+.playInner {
+  width: 1200px;
+  margin: 0 auto 0;
+}
+
+.inforInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.innerContent > h2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.innerContent:nth-of-type(2) > h2 {
+  margin-top: 50px;
+}
+
+.innerContent:nth-of-type(2) > h2 {
+  margin-top: 50px;
+}
+
+.innerContent .inforInnerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerContent .inforInnerContent > div {
+  width: 22%;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #d0d0d084;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 5px 25px;
+  margin-bottom: 60px;
+}
+
+.innerContent .inforInnerContent > div h3 {
+  font-size: 17px;
+  margin: 20px 0 15px;
+  font-weight: 700;
+}
+
+.innerContent .inforInnerContent > div p {
+  color: #8a8a8a;
+  line-height: 22px;
+  height: 50px;
+}
+
+.careInfo {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #d0d0d084;
+  border-radius: 15px;
+  text-align: left;
+  padding: 20px;
+}
+
+.careInfo li {
+  color: #8a8a8a;
+  margin: 15px;
+  text-indent: -22px;
+  margin-left: 22px;
+  line-height: 20px;
+}
+
+.coronationTxt {
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.coronationTxt h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.coronationTxt > div {
+  border-top: 2px solid #96d4f3;
+}
+
+.coronationTxt > div > p {
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.coronationTxt > div > p > span {
+  margin: 0 150px 0 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 1280px) {
+  .lottie-container5 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .coronationTxt h2,
+  .innerContent:nth-of-type(2) > h2 {
+    font-size: 20px;
+  }
+  .coronationTxt > div > p {
+    font-size: 14px;
+  }
+  .careInfo li {
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lottie-container5 {
+    display: none;
+  }
+  footer {
+    margin-top: 150px;
+    background-color: #96d4f3;
+  }
+}
+
+@media (max-width: 480px) {
+  .coronationTxt {
+    margin-bottom: 50px;
+  }
+  .coronationTxt h2,
+  .innerContent:nth-of-type(2) > h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .coronationTxt > div > p {
+    position: relative;
+    margin-top: 30px;
+  }
+  .coronationTxt > div > p > span {
+    position: absolute;
+    margin: -30px 0 0 0;
+  }
+  .careInfo li {
+    margin: 5px 0 5px 15px;
+    font-size: 13px;
+    text-indent: -18px;
+  }
+  footer {
+    margin-top: 110px;
+  }
+  .inforInner {
+    margin: 40px auto 0;
+  }
+}

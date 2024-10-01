@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/resetWrite.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/performance/performanceInfo.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+
+      <div id="subMain02"></div>
+
+      <div class="performanceInner">
+        <h2>공연정보</h2>
+        <form action="#" method="post">
+          <div class="writeinput">
+            <div class="writeFrom">
+              <label for="title">제목</label>
+              <input
+                type="text"
+                name="title"
+                placeholder="제목을 입력하세요"
+                id="title"
+                required
+              />
+            </div>
+            <div class="writeFrom kindBtn">
+              <label for="kind">장르</label>
+              <input type="radio" id="performanceCheck" name="genre" />
+              <label for="performanceCheck">공연</label>
+
+              <input type="radio" id="musical" name="genre" />
+              <label for="musical">교육</label>
+
+              <input type="radio" id="concert" name="genre" />
+              <label for="concert">영화</label>
+
+              <input type="radio" id="other" name="genre" />
+              <label for="other">기타</label>
+            </div>
+            <div class="writeFrom">
+              <label for="period">공연기간</label>
+              <input type="date" name="period" required id="periodStart" />
+              <p class="sortation">~</p>
+              <input type="date" name="period" required id="periodEnd" />
+            </div>
+            <div class="writeFrom writeTime">
+              <label for="time">공연시간</label>
+              <div>
+                <div class="performanceTime">
+                  <label>1차</label>
+                  <input type="time" name="time" required />
+                  <p class="sortation">~</p>
+                  <input type="time" name="time" required />
+                </div>
+                <div class="performanceTime">
+                  <label>2차</label>
+                  <input type="time" name="time" />
+                  <p class="sortation">~</p>
+                  <input type="time" name="time" />
+                </div>
+                <div class="performanceTime">
+                  <label>3차</label>
+                  <input type="time" name="time" />
+                  <p class="sortation">~</p>
+                  <input type="time" name="time" />
+                </div>
+                <div class="performanceTime">
+                  <label>4차</label>
+                  <input type="time" name="time" />
+                  <p class="sortation">~</p>
+                  <input type="time" name="time" />
+                </div>
+              </div>
+            </div>
+            <div class="writeFrom">
+              <div>
+                <label for="price">티켓가격</label>
+                <input
+                  type="text"
+                  name="price"
+                  placeholder="가격을 입력하세요"
+                  id="price"
+                  required
+                />
+              </div>
+              <div>
+                <label for="personnel">관람인원</label>
+                <input
+                  type="text"
+                  name="personnel"
+                  placeholder="인원을 입력하세요"
+                  id="limit"
+                  required
+                />
+              </div>
+            </div>
+            <div class="writeFrom">
+              <div>
+                <label for="rating">관람등급</label>
+                <input
+                  type="text"
+                  name="rating"
+                  placeholder="관람등급을 입력하세요"
+                  id="rating"
+                  required
+                />
+              </div>
+              <div>
+                <label for="inquiry">공연문의</label>
+                <input
+                  type="text"
+                  name="inquiry"
+                  placeholder="문의처를 입력하세요"
+                  id="inquiries"
+                  required
+                />
+              </div>
+            </div>
+            <div class="writeFrom">
+              <label for="subTitle">공연내용</label>
+              <textarea
+                name="subTitle"
+                placeholder="공백 포함 100자 이내로 입력하세요"
+                cols="150"
+                rows="3"
+                id="subTitle"
+                required
+              ></textarea>
+            </div>
+
+            <div class="writeFrom">
+              <label for="thumbnail">썸네일</label>
+              <input type="file" accept="img/*" id="thumbnail" required />
+            </div>
+          </div>
+
+          <div id="standalone-container">
+            <div id="toolbar-container">
+              <span class="ql-formats">
+                <select class="ql-font"></select>
+                <select class="ql-size"></select>
+              </span>
+              <span class="ql-formats">
+                <button class="ql-bold"></button>
+                <button class="ql-italic"></button>
+                <button class="ql-underline"></button>
+                <button class="ql-strike"></button>
+              </span>
+              <span class="ql-formats">
+                <select class="ql-color"></select>
+                <select class="ql-background"></select>
+              </span>
+              <span class="ql-formats">
+                <button class="ql-list" value="ordered"></button>
+                <button class="ql-list" value="bullet"></button>
+                <button class="ql-indent" value="+1"></button>
+              </span>
+              <span class="ql-formats">
+                <button class="ql-direction" value="rtl"></button>
+                <select class="ql-align"></select>
+              </span>
+              <span class="ql-formats">
+                <button class="ql-link"></button>
+                <button class="ql-image"></button>
+                <button class="ql-video"></button>
+              </span>
+            </div>
+            <div id="editor-container"></div>
+            <button class="writeSaveBtn" type="submit">저장</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="lottie-container5">
+        <lottie-player
+          src="/public/lottie/blueBg.json"
+          class="pinkBg pinkBgWeb"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div class="lottie-container6">
+        <lottie-player
+          src="/public/lottie/blue1280Bg.json"
+          class="pinkBg mobilePink"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="lottie-container7">
+        <lottie-player
+          src="/public/lottie/blue1280.json"
+          class="pinkBg mobilePinkPlane"
+          background="transparent"
+          speed="0.7"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/src/script/subpage/performance/performanceWrite.js"></script>
+  </body>
+</html>

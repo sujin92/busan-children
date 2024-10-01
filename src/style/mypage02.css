@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+  .condition {
+    margin: 60px 0 0 80px;
+  }
+
+  .joinConsentInner div:nth-of-type(4) {
+    padding-bottom: 30px;
+  }
+  .emailCertifiedBar .condition {
+    margin: 110px 0 0 80px;
+  }
+  .joinConsentInner div:nth-of-type(6) {
+    flex-wrap: wrap;
+  }
+  .emailCheck,
+  .emailCheckOk {
+    margin: 10px 0 0 80px;
+  }
+}

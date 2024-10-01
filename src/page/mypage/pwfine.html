@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비밀번호 찾기</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/mypage.css" />
+    <link rel="stylesheet" href="/src/style/mypage02.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <div class="joinConsent">
+      <h1>비밀번호 찾기</h1>
+      <div class="joinConsentInner">
+        <h2>가입 정보 입력</h2>
+        <form method="post">
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="username">아이디</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="birthdate">생년월일</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">휴대전화번호</label>
+            <input type="tel" id="phone" name="phone" required />
+            <p class="condition">* 기호(-) 없이 입력해야 합니다</p>
+          </div>
+          <div class="form-group emailCertifiedBar">
+            <label for="email">이메일 인증</label>
+            <input type="email" id="email" name="email" required />
+            <button type="button" class="emailCertified">인증번호 발송</button>
+            <p class="condition">* 발송 완료까지 2~5초가량 소요됩니다.</p>
+          </div>
+          <div class="form-group">
+            <label for="emailOk"></label>
+            <input
+              type="text"
+              id="emailOk"
+              name="emailOk"
+              placeholder="전송된 인증번호를 입력해 주세요"
+            />
+            <button type="button" class="emailCheck">확인</button>
+            <button type="button" class="emailCheckOk">인증완료</button>
+          </div>
+        </form>
+        <button type="button" value="확인" class="joinBtn" id="pwfineBtn">
+          확인
+        </button>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p id="modal-message">인증메일 전송이 완료되었습니다.</p>
+        <button class="close-modal-btn">닫기</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script src="/src/script/header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="/src/script/mypage/pwFine.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유아동극장</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/children/children.css" />
+    <link rel="stylesheet" href="/src/style/myPageInfo/member.css" />
+
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div class="wrap">
+      <div id="subMain"></div>
+      <div id="subMain02"></div>
+      <div id="subMain03"></div>
+      <div id="subMain04"></div>
+      <div id="subMain05"></div>
+      <div id="subMain06"></div>
+      <div id="subMain07" style="display: none"></div>
+
+      <div id="subMain08"></div>
+
+      <div class="centerInner">
+        <div class="reservationList">
+          <h2>회원 상세정보</h2>
+          <button class="withdrawalBtn" type="button">
+            <a href="#pop_info_1" class="btn_open">회원탈퇴</a>
+          </button>
+          <div>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="name">이름</label>
+                <p class="userName"></p>
+              </div>
+              <div class="form-group">
+                <label for="username">아이디</label>
+                <p class="userId"></p>
+              </div>
+              <div class="form-group">
+                <label>성별</label>
+                <p class="gender"></p>
+              </div>
+              <div class="form-group">
+                <label for="birthdate">생년월일</label>
+                <p class="birth"></p>
+              </div>
+              <div class="form-group">
+                <label for="phone">휴대전화번호</label>
+                <p class="phone"></p>
+              </div>
+              <div class="form-group">
+                <label for="email">이메일</label>
+                <p class="email"></p>
+              </div>
+              <div class="form-group">
+                <label for="address">주소</label>
+                <p class="addrBasic" style="margin-right: 5px"></p>
+                <p class="addrDetail" style="margin-right: 5px"></p>
+                <p class="addrPost"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="pop_info_1" class="pop_wrap" style="display: none">
+        <div class="pop_inner">
+          <p class="dsc">
+            <i class="fa-solid fa-exclamation"></i><br />회원 탈퇴를
+            진행하시겠습니까?
+          </p>
+          <button type="button" class="btn_close">아니오</button>
+          <button type="button" class="btn_ok">예</button>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src//script//header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/src/script/mypage/managerPage/membershipDetail.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

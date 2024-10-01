@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한형석 자유아동극장</title>
+
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://fastly.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="src/style/reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- quickMenu -->
+    <div id="quickMenu"></div>
+
+    <div id="subMain"></div>
+
+    <div class="wrap">
+      <div class="swiper mySwiper swiperWeb">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/public/img/main/banner01.jpg" alt="banner" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/public/img/main/banner02.jpg" alt="banner" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/public/img/main/banner03.jpg" alt="banner" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper mySwiper swiperMobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/public/img/main/banner01_02.jpg" alt="banner" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/public/img/main/banner02_02.jpg" alt="banner" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/public/img/main/banner03_02.jpg" alt="banner" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <section class="section01">
+        <div class="topInfo">
+          <div class="infoLeft">
+            <img src="./public/icon/main/festival.png" alt="공연정보" />
+            <div>
+              <div>
+                <h3>문화정보</h3>
+                <img src="./public/icon/arrow.png" alt="화살표" />
+              </div>
+              <p>다양한 문화활동을 확인해 보세요!</p>
+            </div>
+          </div>
+          <div class="infoRightBox">
+            <div class="infoRight" data-id="1">
+              <div>
+                <h4 class="title"></h4>
+                <div>
+                  <h5><span class="periodStart"></span></h5>
+                  <em> ~ </em>
+                  <h5><span class="periodEnd"></span></h5>
+                </div>
+                <p class="price"></p>
+                <a href="#" class="detailTop"><span>자세히보기</span></a>
+              </div>
+            </div>
+            <span class="line"></span>
+            <div class="infoRight" data-id="2">
+              <div>
+                <h4 class="title"></h4>
+                <div>
+                  <h5><span class="periodStart"></span></h5>
+                  <em> ~ </em>
+                  <h5><span class="periodEnd"></span></h5>
+                </div>
+                <p class="price"></p>
+                <a href="#" class="detailTop"><span>자세히보기</span></a>
+              </div>
+            </div>
+            <span class="line"></span>
+            <div class="infoRight" data-id="3">
+              <div>
+                <h4 class="title"></h4>
+                <div>
+                  <h5><span class="periodStart"></span></h5>
+                  <em> ~ </em>
+                  <h5><span class="periodEnd"></span></h5>
+                </div>
+                <p class="price"></p>
+                <a href="#" class="detailTop"><span>자세히보기</span></a>
+              </div>
+            </div>
+            <span class="line"></span>
+            <div class="infoRight" data-id="4">
+              <div>
+                <h4 class="title"></h4>
+                <div>
+                  <h5><span class="periodStart"></span></h5>
+                  <em> ~ </em>
+                  <h5><span class="periodEnd"></span></h5>
+                </div>
+                <p class="price"></p>
+                <a href="#" class="detailTop"><span>자세히보기</span></a>
+              </div>
+            </div>
+            <span class="line"></span>
+            <div class="infoRight" data-id="5">
+              <div>
+                <h4 class="title"></h4>
+                <div>
+                  <h5><span class="periodStart"></span></h5>
+                  <em> ~ </em>
+                  <h5><span class="periodEnd"></span></h5>
+                </div>
+                <p class="price"></p>
+                <a href="#" class="detailTop"><span>자세히보기</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section02">
+        <div class="contentBk">
+          <h2>한형석 자유아동극장 체험관만의 차별화된 문화 체험 콘텐츠</h2>
+          <div
+            class="lottie-container"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <lottie-player
+              src="/public/lottie/firecracker.json"
+              class="firecracker"
+              background="transparent"
+              speed="0.7"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div
+            class="lottie-container2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <lottie-player
+              src="/public/lottie/firecracker.json"
+              class="firecracker"
+              background="transparent"
+              speed="0.7"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div class="contentGo">
+            <div class="contentPlay01">
+              <a href="/src/page/subPage/play/playInfo.html">
+                <img
+                  src="./public/icon/main/contentPlay01.png"
+                  alt=" 아이콘"
+                  height="80"
+                />
+                <h3>놀이·체험</h3>
+              </a>
+            </div>
+            <div class="contentPlay02">
+              <a href="/src/page/subPage/performance/performanceInfo.html">
+                <img
+                  src="./public/icon/main/contentPlay02.png"
+                  alt=" 아이콘"
+                  height="80"
+                />
+                <h3>문화활동</h3>
+              </a>
+            </div>
+            <div class="contentPlay03">
+              <a href="/src/page/subPage/coronation/coronationInfo.html">
+                <img
+                  src="./public/icon/main/contentPlay03.png"
+                  alt=" 아이콘"
+                  height="80"
+                />
+                <h3>대관안내</h3>
+              </a>
+            </div>
+            <div class="contentPlay04">
+              <a href="/src/page/subPage/center/location.html">
+                <img
+                  src="./public/icon/main/contentPlay04.png"
+                  alt=" 아이콘"
+                  height="80"
+                />
+                <h3>오시는길</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section03">
+        <div class="calendarParts">
+          <div class="titleLottie">
+            <h2>이달의 일정</h2>
+            <div class="lottie-container3">
+              <lottie-player
+                src="/public/lottie/schedule.json"
+                class="schedule"
+                background="transparent"
+                speed="0.7"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+          </div>
+          <div>
+            <div class="calendarBox">
+              <div
+                id="calendar"
+                class="calendar"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
+                <div class="header2">
+                  <div class="nav2">
+                    <button class="nav-btn go-prev" onclick="prevMonth()">
+                      &lt;
+                    </button>
+                    <div class="year-month"></div>
+                    <button class="nav-btn go-next" onclick="nextMonth()">
+                      &gt;
+                    </button>
+                  </div>
+                  <button class="nav-btn go-today" onclick="goToday()">
+                    Today
+                  </button>
+                </div>
+                <div class="main">
+                  <div class="days">
+                    <div class="day">일</div>
+                    <div class="day">월</div>
+                    <div class="day">화</div>
+                    <div class="day">수</div>
+                    <div class="day">목</div>
+                    <div class="day">금</div>
+                    <div class="day">토</div>
+                  </div>
+                  <div class="dates"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="calendarInfoBox"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              <div class="noSelect">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>날짜를 선택해 주세요</p>
+              </div>
+              <div class="calendarBoxItem">
+                <div>
+                  <a href="./src/page/subPage/reservation/reservation.html">
+                    <img
+                      src="/public/img/main/testImage.png"
+                      alt="공연"
+                      class="thumbnail"
+                    />
+
+                    <div class="calendarPartsRight">
+                      <strong class="genre"></strong>
+                      <h3 class="calendarTitle"></h3>
+                      <p>
+                        <em>내용</em>
+                        <span class="calendarSubTitle"></span>
+                      </p>
+                      <p>
+                        <em>기간</em>
+                        <span class="calendarStartDate"></span> ~
+                        <span class="calendarEndtDate"></span>
+                      </p>
+                      <p>
+                        <em>연령</em>
+                        <span class="calendarRating"></span>
+                      </p>
+                      <p>
+                        <em>가격</em>
+                        <span class="calendarPrice"></span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="calendarBoxItem02">
+                <div>
+                  <a href="./src/page/subPage/reservation/reservation.html">
+                    <img
+                      src="/public/img/main/testImage.png"
+                      alt="공연"
+                      class="thumbnail"
+                    />
+
+                    <div class="calendarPartsRight">
+                      <strong class="genre"></strong>
+                      <h3 class="calendarTitle"></h3>
+                      <p>
+                        <em>내용</em>
+                        <span class="calendarSubTitle"></span>
+                      </p>
+                      <p>
+                        <em>기간</em>
+                        <span class="calendarStartDate"></span> ~
+                        <span class="calendarEndtDate"></span>
+                      </p>
+                      <p>
+                        <em>연령</em>
+                        <span class="calendarRating"></span>
+                      </p>
+                      <p>
+                        <em>가격</em>
+                        <span class="calendarPrice"></span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section04">
+        <div class="mainNotice">
+          <div
+            class="leftNotice"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <div class="noticeLottie">
+              <h1>새소식</h1>
+              <div class="lottie-container4">
+                <lottie-player
+                  src="/public/lottie/notice.json"
+                  class="notice"
+                  background="transparent"
+                  speed="0.7"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+            </div>
+            <a href="/src/page/subPage/center/notice.html">
+              <p>바로가기</p>
+              <img
+                src="/public/icon/main/arrowColor.png"
+                alt="arrow"
+                width="23"
+              />
+            </a>
+          </div>
+          <div class="rightNotice">
+            <div
+              class="noticeTxt"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a href="/src/page/subPage/center/noticeDetail.html">
+                <span class="noticeCategory group"></span>
+                <h3><em class="titleNotic">공지사항 제목입니다.</em></h3>
+                <p class="contentNotice"></p>
+              </a>
+            </div>
+            <div
+              class="noticeTxt otherTxt"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <a href="/src/page/subPage/center/noticeDetail.html">
+                <span class="noticeCategory group"></span>
+                <h3><em class="titleNotic">공지사항 제목입니다.</em></h3>
+                <p class="contentNotice"></p>
+              </a>
+            </div>
+            <div
+              class="noticeTxt otherTxt"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <a href="/src/page/subPage/center/noticeDetail.html">
+                <span class="noticeCategory group"></span>
+                <h3><em class="titleNotic">공지사항 제목입니다.</em></h3>
+                <p class="contentNotice"></p>
+              </a>
+            </div>
+            <div
+              class="noticeTxt"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <a href="/src/page/subPage/center/noticeDetail.html">
+                <span class="noticeCategory group"></span>
+                <h3><em class="titleNotic">공지사항 제목입니다.</em></h3>
+                <p class="contentNotice"></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src/script/animate.js"></script>
+    <script src="/assets/calendar/calendar.js"></script>
+    <script src="/src/script/header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="/src/script/mainPage.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

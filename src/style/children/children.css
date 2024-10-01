@@ -1,0 +1,329 @@
+#subMain {
+  display: block;
+  position: relative;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.mainTitle {
+  position: relative;
+  top: 90px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.lottie-container01,
+.lottie-container02 {
+  width: 600px;
+  position: absolute;
+  top: 50px;
+  z-index: -1;
+}
+
+.lottie-container01 {
+  left: 0;
+}
+
+.lottie-container02 {
+  right: 0;
+}
+
+.mainTxt {
+  margin: 0 auto;
+}
+
+.mainTxt h2 {
+  font-size: 68px;
+  font-family: "MBC1961GulimM";
+  letter-spacing: 2px;
+  color: #f18299;
+  margin-bottom: 50px;
+}
+
+.mainTxt p {
+  font-size: 24px;
+  font-family: "MBC1961GulimM";
+  letter-spacing: 1px;
+  width: 500px;
+  word-break: keep-all;
+  line-height: 32px;
+}
+
+/* tab */
+.tab01 {
+  width: 100%;
+  text-align: center;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+}
+
+.tab > a {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 40px;
+  transition: 0.3s;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.lottie-container5 {
+  position: absolute;
+  width: 100%;
+  z-index: -555;
+  bottom: 0;
+}
+
+#footer {
+  background-color: transparent;
+  padding-bottom: 40px;
+}
+
+footer {
+  margin-top: 220px;
+}
+
+.topBgTop {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.nav-btn {
+  margin: 3px 0;
+}
+
+@media (max-width: 1440px) {
+  #footer {
+    padding-bottom: 20px;
+  }
+  .introduction > img {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .mainTitle {
+    height: 320px;
+  }
+  .mainTxt h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .mainTxt p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .character {
+    margin-top: 70px;
+  }
+  .tab > a {
+    font-size: 15px;
+    margin: 17px 40px;
+  }
+
+  .topBg {
+    top: 500px;
+  }
+
+  .centerGreeting {
+    margin-top: 90px !important;
+  }
+  .pinkBgWeb {
+    display: none;
+  }
+  .lottie-container6 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -333;
+  }
+  .lottie-container7 {
+    display: block;
+    width: 25vw;
+    position: absolute;
+    bottom: 100px;
+    right: 0%;
+    z-index: -999;
+  }
+  #footer {
+    padding-bottom: 30px;
+  }
+  footer {
+    margin-top: 231px;
+  }
+
+  .introduction .bottomTxt > div {
+    width: 80% !important;
+  }
+  .introduction .bottomTxt > div {
+    padding: 30px 0;
+  }
+
+  .inforInner {
+    width: 80% !important;
+  }
+  .inforInnerContent div img {
+    width: 7vw;
+  }
+  .innerContent .inforInnerContent > div h3 {
+    font-size: 1.3vw;
+  }
+  .innerContent .inforInnerContent > div p {
+    font-size: 1.2vw;
+  }
+  .tg .tg-amwm {
+    font-size: 1.2vw !important;
+  }
+  .tg .tg-0lax {
+    font-size: 1.2vw !important;
+  }
+  .innerContent .content > img {
+    width: 80%;
+  }
+  .floorImg {
+    width: 100% !important;
+    bottom: -750px !important;
+  }
+  .floorImg .floor1f div img {
+    width: 25vw !important;
+  }
+  .floorImg .floor1f {
+    gap: 2.1vw !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lottie-container6 {
+    bottom: -0vw;
+  }
+  #footer {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .character {
+    margin-top: 110px;
+  }
+  .mainTxt p {
+    width: 430px;
+  }
+  .nav-btn {
+    margin: 6px 0;
+  }
+  #footer {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  footer div:nth-of-type(2) > h3 {
+    display: none;
+  }
+  footer {
+    padding: 16px 3vw;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    align-items: flex-start;
+    height: 260px;
+  }
+  .mainTxt {
+    text-align: left;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .mainTxt h2 {
+    font-size: 40px;
+  }
+
+  .floorImg .floor1f div img {
+    width: 24.9vw !important;
+  }
+
+  .tab > a {
+    padding: 0;
+    font-size: 2vw;
+  }
+  .topBg {
+    top: 420px;
+  }
+
+  .logoWhite {
+    display: block;
+  }
+  .logoBlack {
+    display: none;
+  }
+  .lottie-container6 {
+    display: none;
+  }
+  .lottie-container7 {
+    bottom: 120px;
+    width: 210px;
+  }
+
+  #footer {
+    padding-bottom: 0;
+  }
+  footer {
+    background-color: #f18299;
+    margin-top: 140px;
+    padding: 46px 2vw;
+    justify-content: center;
+  }
+  footer div:nth-of-type(2) div {
+    bottom: 25px;
+  }
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p,
+  footer div:nth-of-type(2) div p span {
+    color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainTitle {
+    height: 150px;
+    align-items: center;
+  }
+  .mainTxt {
+    text-align: center;
+  }
+  .mainTxt h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .mainTxt p {
+    width: auto;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .mobileCharacter {
+    display: none;
+  }
+
+  .tab > a {
+    font-size: 12px;
+    margin: 15px 8vw;
+  }
+}

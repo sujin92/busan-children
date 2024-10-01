@@ -1,0 +1,466 @@
+.tab > .facilities {
+  background: linear-gradient(to top, #fdacbc 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.introduction {
+  text-align: center;
+}
+
+.introduction > p {
+  font-size: 22px;
+  font-family: "MBC1961GulimM";
+  letter-spacing: 1px;
+  margin-top: 80px;
+}
+
+.introduction > h2 {
+  font-size: 48px;
+  font-family: "MBC1961GulimM";
+  letter-spacing: 1px;
+  margin: 20px 0 70px;
+}
+
+.introduction .carousel div > img {
+  border-radius: 30px;
+}
+
+.introduction > h3 {
+  font-size: 24px;
+  margin: 70px auto 50px;
+  line-height: 38px;
+  width: 30%;
+  word-break: keep-all;
+}
+
+.introduction > h3 > span {
+  background: linear-gradient(to top, #fdacbc 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.introduction > h4 {
+  font-size: 20px;
+  line-height: 26px;
+  width: 40%;
+  word-break: keep-all;
+  margin: 0 auto 80px;
+}
+
+.introduction .bottomTxt,
+.layerInfo {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.introduction .bottomTxt > span,
+.layerInfo > span {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  background-color: #f18299;
+  width: 12%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.introduction .bottomTxt > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 70px;
+}
+
+.introduction .bottomTxt > div .locationDiv {
+  display: flex;
+  width: 43%;
+  background-color: #fff;
+  box-shadow: 1px 1px 15px #dddddd84;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.locationDiv > div {
+  margin-left: 30px;
+  text-align: left;
+}
+
+.locationDiv > div h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.locationDiv > div p {
+  font-size: 20px;
+  color: #898989;
+  margin-top: 15px;
+}
+
+.layerInfo > div > div {
+  display: flex;
+  margin: 50px 0 20px;
+  align-items: center;
+}
+
+.layerInfo > div > div i {
+  color: #f18299;
+}
+
+.layerInfo > div > div h4 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.topBg3 {
+  position: absolute;
+  bottom: 500px;
+  display: flex;
+  justify-content: center;
+  z-index: -10;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.tg td {
+  border-color: #cacaca !important;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "NanumSquareNeo";
+  font-size: 16px;
+  overflow: hidden;
+  padding: 15px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: #cacaca !important;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "NanumSquareNeo";
+  font-size: 16px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 15px 5px;
+  word-break: normal;
+  border-top: 2px solid #f18299 !important;
+  font-weight: 600;
+}
+.tg .tg-9wq8 {
+  border-color: inherit;
+  text-align: center;
+  vertical-align: middle;
+}
+.tg .tg-nrix {
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer {
+  margin-top: 250px;
+}
+.carousel {
+  width: 1400px;
+  margin: 0 auto;
+}
+.carousel img {
+  width: 100%;
+}
+.slick-dots li.slick-active button::before {
+  color: #f18299 !important;
+}
+.slick-dots {
+  bottom: -35px;
+}
+.slick-list {
+  border-radius: 30px;
+}
+
+@media (max-width: 1280px) {
+  .carousel {
+    width: 1100px;
+  }
+  .introduction > h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .introduction > h3 {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 70px auto 30px;
+    width: 40%;
+  }
+  .introduction > h4 {
+    margin-bottom: 50px;
+    font-size: 16px;
+    width: 45%;
+  }
+  .introduction .bottomTxt > div {
+    width: 100% !important;
+    margin: 0px 0 40px;
+  }
+
+  .introduction .bottomTxt > span,
+  .layerInfo > span {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .topBg3 {
+    top: 760px;
+    width: 100%;
+  }
+  .introduction .bottomTxt div .locationDiv:nth-of-type(1) img {
+    width: 100px;
+  }
+  .introduction .bottomTxt div .locationDiv:nth-of-type(2) img {
+    width: 70px;
+  }
+  .locationDiv > div h3,
+  .locationDiv > div p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .introduction > p {
+    font-size: 20px;
+  }
+  .introduction > h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+  .introduction > h3 {
+    font-size: 20px;
+    margin: 40px auto;
+    width: 50%;
+  }
+  .introduction > h4 {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+  .introduction .bottomTxt,
+  .layerInfo {
+    width: 90%;
+  }
+  .carousel {
+    width: 90%;
+  }
+  .locationDiv > div p {
+    font-size: 17px;
+  }
+  .introduction .bottomTxt > div {
+    padding: 20px 0;
+  }
+  .introduction .bottomTxt > div > img {
+    width: 18vw;
+  }
+  .introduction .bottomTxt > div .bottomContent > h3 {
+    font-size: 20px;
+  }
+  .introduction .bottomTxt > div .bottomContent > p {
+    font-size: 15px;
+  }
+  .introduction .bottomTxt > div .bottomContent {
+    margin-left: 20px;
+  }
+  .introduction .bottomTxt > div .bottomContent > p span {
+    width: 60px;
+  }
+  .tg {
+    width: 100%;
+  }
+
+  .lottie-container7 {
+    bottom: 80px;
+  }
+  footer {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction > p {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  .introduction > h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .introduction > h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .introduction .bottomTxt > div .bottomContent > h3 {
+    font-size: 17px;
+  }
+  .introduction .bottomTxt > div .bottomContent > p {
+    font-size: 14px;
+  }
+  .introduction .bottomTxt > span,
+  .layerInfo > span {
+    font-size: 14px;
+  }
+  .introduction .bottomTxt > div .locationDiv {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .locationDiv > div p {
+    font-size: 16px;
+  }
+  .layerInfo > div > div h4 {
+    font-size: 16px;
+  }
+  .tg .tg-9wq8,
+  .tg th,
+  .tg td {
+    font-size: 14px;
+  }
+  .tg .tg-nrix img {
+    width: 120px;
+  }
+
+  .locationDiv > div {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .lottie-container7 {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .slick-dots li {
+    margin: 0 !important;
+  }
+  .introduction > h3 {
+    font-size: 16px;
+    width: 60%;
+    margin: 45px auto 30px;
+  }
+  .introduction > h4 {
+    width: 70%;
+  }
+  .introduction .bottomTxt > span,
+  .layerInfo > span {
+    width: 20%;
+    font-size: 13px;
+    padding: 7px 0;
+  }
+  .introduction .bottomTxt > div {
+    flex-wrap: wrap;
+  }
+  .introduction .bottomTxt > div .locationDiv {
+    width: 100%;
+  }
+  .introduction .bottomTxt div .locationDiv:nth-of-type(1) img {
+    width: 70px;
+  }
+  .introduction .bottomTxt div .locationDiv:nth-of-type(2) img {
+    width: 50px;
+  }
+  .locationDiv > div h3,
+  .locationDiv > div p {
+    font-size: 14px;
+  }
+  .introduction .bottomTxt > div .locationDiv {
+    height: 140px;
+  }
+  .locationDiv > div {
+    margin: 15px 0 5px;
+  }
+  .introduction .bottomTxt > div div:nth-of-type(2) {
+    margin-top: 20px;
+  }
+  footer {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .layerInfo > div > div {
+    margin: 30px 0 20px;
+  }
+  .layerInfo > div > div h4,
+  .layerInfo > div > div i {
+    font-size: 14px;
+  }
+  .tg .tg-9wq8,
+  .tg th,
+  .tg td {
+    font-size: 12px;
+  }
+  .tg .tg-nrix img {
+    width: 80px;
+  }
+  .introduction > p {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .introduction > h2 {
+    font-size: 22px;
+    margin: 10px 0 20px;
+  }
+  .introduction > h3 {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .introduction > h4 {
+    width: 100%;
+    font-size: 11px;
+  }
+  .introduction .bottomTxt > span,
+  .layerInfo > span {
+    width: 25%;
+  }
+
+  footer {
+    margin-top: 100px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

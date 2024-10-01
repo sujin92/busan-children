@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/src/style/mypage.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b64b541721.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <div class="joinConsent">
+      <h1>아이디 찾기</h1>
+      <div class="joinConsentInner">
+        <h2>가입 정보 입력</h2>
+        <form action="./idfine2.html" method="post">
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="birthdate">생년월일</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </form>
+        <button type="button" value="확인" class="joinBtn" id="idFineBtn">
+          확인
+        </button>
+      </div>
+    </div>
+
+    <div class="joinConsentHidden" style="display: none">
+      <div class="idfineInner">
+        <p>회원님의 아이디는 <span class="idCheck">abcd1234</span> 입니다.</p>
+        <div class="fineBtn">
+          <a href="./login.html"><p>로그인하기</p></a>
+          <a href="./pwfine.html"><p class="pwfineOther">비밀번호 찾기</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script src="/src/script/header.js"></script>
+    <script src="/src/script/common.js"></script>
+    <script src="/src/script/mypage/idFine.js"></script>
+  </body>
+</html>

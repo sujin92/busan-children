@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./calendar.css" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div id="calendar" class="calendar">
+      <div class="header2">
+        <div class="nav2">
+          <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+          <div class="year-month"></div>
+          <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+        </div>
+        <button class="nav-btn go-today" onclick="goToday()">Today</button>
+      </div>
+      <div class="main">
+        <div class="days">
+          <div class="day">일</div>
+          <div class="day">월</div>
+          <div class="day">화</div>
+          <div class="day">수</div>
+          <div class="day">목</div>
+          <div class="day">금</div>
+          <div class="day">토</div>
+        </div>
+        <div class="dates"></div>
+      </div>
+    </div>
+    <script src="./calendar.js"></script>
+  </body>
+</html>

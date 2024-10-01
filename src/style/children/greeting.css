@@ -1,0 +1,158 @@
+.tab > .greeting {
+  background: linear-gradient(to top, #fdacbc 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.centerGreeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px auto 0;
+  width: 60%;
+}
+
+.greetingTxt h2 {
+  font-size: 1.4vw;
+  word-break: keep-all;
+  line-height: 2vw;
+  padding-right: 2vw;
+  font-weight: 700;
+}
+
+.greetingTxt h2 span {
+  color: #f18299;
+}
+
+.greetingTxt p {
+  font-size: 1vw;
+  line-height: 1.4vw;
+  word-break: keep-all;
+  padding-right: 2vw;
+}
+
+.greetingTxt p em {
+  font-weight: 700;
+}
+
+.mainImg img {
+  border-radius: 30px;
+  width: 30vw;
+}
+
+.mobileBack {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .centerGreeting {
+    width: 70%;
+  }
+  .greetingTxt h2 {
+    font-size: 1.5vw;
+    line-height: 2.3vw;
+  }
+  .greetingTxt p {
+    font-size: 1.1vw;
+    line-height: 1.6vw;
+  }
+  .mainImg img {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainImg img {
+    width: 35vw;
+  }
+  .greetingTxt h2 {
+    font-size: 1.7vw;
+    line-height: 2.7vw;
+  }
+  .greetingTxt p {
+    font-size: 1.2vw;
+    line-height: 1.7vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .centerGreeting {
+    width: 75%;
+  }
+  .mainImg img {
+    width: 40vw;
+  }
+  .greetingTxt h2 {
+    font-size: 2vw;
+    line-height: 2.7vw;
+  }
+  .greetingTxt p {
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .centerGreeting {
+    width: 80%;
+    margin: 40px auto 0 !important;
+    flex-direction: column;
+    height: auto;
+  }
+  .greetingTxt h2 {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .greetingTxt p {
+    position: absolute;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 140px;
+    padding-right: 0;
+  }
+  .mainImg img {
+    width: 100%;
+    top: 0;
+  }
+  .webBack {
+    display: none;
+  }
+  .mobileBack {
+    display: block;
+  }
+  footer {
+    margin-top: 370px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}

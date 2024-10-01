@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slick Carousel Example</title>
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Slick theme CSS (optional) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!-- Your carousel content goes here -->
+    <div class="carousel" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+      <div><h3>4</h3></div>
+      <div><h3>5</h3></div>
+      <div><h3>6</h3></div>
+      <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Slick JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://fastly.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      // Initialize Slick carousel
+      $(document).ready(function () {
+        $(".carousel").slick();
+      });
+    </script>
+  </body>
+</html>

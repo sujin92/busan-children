@@ -1,0 +1,238 @@
+#subMain,
+#subMain02,
+#subMain03 {
+  display: none;
+}
+
+.tab > .playInfo {
+  background: linear-gradient(to top, #96d4f3 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #96d4f3;
+}
+
+.playInner {
+  width: 1200px;
+  margin: 0 auto 0;
+}
+
+.playInner > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+
+.playInner > div .leftContent img {
+  border-radius: 20px;
+  width: 450px;
+}
+
+.playInner > div .leftContent span {
+  position: absolute;
+  color: #f0f0f0;
+  font-family: "MBC1961GulimM";
+  font-size: 100px;
+  top: -50px;
+  z-index: -1;
+}
+
+.playInner > div .leftContent h2 {
+  font-size: 40px;
+  font-family: "MBC1961GulimM";
+  color: #96d4f3;
+}
+
+.music {
+  width: 120px;
+  position: absolute;
+  top: -150px;
+  left: 450px;
+}
+
+.playInner > div .rightContent {
+  margin: 0 80px;
+  position: relative;
+}
+
+.playInner > div .rightContent h1 {
+  font-size: 26px;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+
+.playInner > div .rightContent h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.playInner > div .rightContent p {
+  font-size: 16px;
+  line-height: 26px;
+  word-break: keep-all;
+  color: #a0a0a0;
+}
+
+.playInner > div .rightContent p:nth-of-type(1) {
+  margin-bottom: 50px;
+}
+
+.run {
+  transform: scaleX(-1);
+}
+
+.puzzle {
+  width: 200px;
+  left: 400px;
+}
+
+.sand {
+  width: 200px;
+  top: -200px;
+  left: 400px;
+}
+
+.topBg3 {
+  bottom: 800px;
+}
+
+@media (max-width: 1440px) {
+  .playInner {
+    width: 80%;
+  }
+  .playInner > div .rightContent {
+    margin: 0 40px;
+  }
+  .run {
+    left: 380px;
+  }
+  .sand {
+    left: 350px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .playInner > div .leftContent h2 {
+    font-size: 3vw;
+  }
+  .playInner > div .leftContent img {
+    width: 36vw;
+  }
+  .playInner > div .rightContent {
+    margin: 0 40px;
+  }
+  .playInner > div .rightContent h1 {
+    font-size: 1.8vw;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+  }
+  .playInner > div .rightContent h3 {
+    font-size: 1.5vw;
+  }
+  .playInner > div .rightContent p {
+    font-size: 1.3vw;
+  }
+  .lottie-container5 {
+    display: none;
+  }
+  .music {
+    left: 33vw;
+    width: 7vw;
+    top: -140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .playInner {
+    width: 90%;
+  }
+  .playInner > div .rightContent h3 {
+    margin-bottom: 10px;
+  }
+  .playInner > div .rightContent p:nth-of-type(1) {
+    margin-bottom: 30px;
+  }
+  .playInner > div .rightContent p {
+    line-height: 1.8vw;
+  }
+  .music {
+    top: -90px;
+  }
+  footer {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .playInner > div .leftContent span {
+    font-size: 70px;
+    top: -40px;
+  }
+  .music {
+    top: -100px;
+  }
+
+  footer {
+    background-color: #96d4f3;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .playInner > div {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .playInner > div .leftContent {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .playInner > div .leftContent h2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .playInner > div .leftContent img {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .playInner > div .leftContent span {
+    margin-left: 40px;
+    font-size: 50px;
+    top: -20px;
+  }
+  .playInner > div .rightContent h1 {
+    font-size: 13px;
+    margin-top: 40px;
+  }
+  .playInner > div .rightContent h3 {
+    font-size: 11px;
+  }
+  .playInner > div .rightContent p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .music {
+    left: 0;
+    width: 40px;
+    top: -110px;
+  }
+  .playInner > div:nth-of-type(even) {
+    position: relative;
+  }
+  .playInner > div:nth-of-type(even) .rightContent {
+    position: absolute;
+    top: 285px;
+  }
+  .playInner > div:nth-of-type(3) {
+    margin-top: 300px;
+  }
+  footer {
+    margin-top: 340px;
+  }
+}

@@ -1,0 +1,315 @@
+#subMain,
+#subMain02,
+#subMain03,
+#subMain04,
+#subMain05 {
+  display: none;
+}
+
+.tab > .faq {
+  background: linear-gradient(to top, #aaa5e7 30%, transparent 40%);
+  font-weight: 600;
+}
+
+.mainTxt h2 {
+  color: #908bcc;
+}
+
+.centerInner {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.centerInnerTop {
+  position: relative;
+}
+
+.centerInnerTop .noticeBar {
+  border: 1px solid #d2d2d2;
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+.centerInnerTop .noticeBar select,
+.centerInnerTop .noticeBar input {
+  border: none;
+}
+
+.centerInnerTop .noticeBar select {
+  margin-right: 30px;
+}
+
+.centerInnerTop .noticeBar input {
+  width: 350px;
+}
+
+.centerInnerTop .noticeBar button {
+  border: none;
+  background-color: transparent;
+  margin-left: 70px;
+}
+
+.pageNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageNumber > i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.pageNumber > span {
+  margin: 0 10px;
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNumber > span.active {
+  background-color: #908bcc;
+  color: #fff;
+}
+
+.pageNumber > p {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.faqList {
+  margin: 50px 0;
+  border-top: 2px solid #908bcc;
+}
+
+.que {
+  position: relative;
+  padding: 17px 0;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.que::before {
+  display: inline-block;
+  content: "Q";
+  font-size: 14px;
+  color: #908bcc;
+  margin: 0 20px;
+}
+
+.que.on > span {
+  font-weight: bold;
+  color: #908bcc;
+}
+
+.que > span {
+  display: inline-block;
+  width: 85%;
+  word-break: keep-all;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.que > p {
+  display: inline-block;
+  background-color: #908bcc;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 13px;
+  padding: 5px 8px;
+  margin-right: 15px;
+  color: #fff;
+  width: 60px;
+}
+
+.anw {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: #faf7ff;
+  padding: 27px 0;
+  text-align: left;
+}
+
+.anw > span {
+  display: inline-block;
+  width: 90%;
+  word-break: keep-all;
+  line-height: 20px;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+.anw::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  content: "A";
+  font-size: 14px;
+  font-weight: bold;
+  color: #908bcc;
+  margin-left: 20px;
+}
+
+.arrow-wrap {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+
+.arrow-wrap i {
+  color: #ababab;
+}
+
+.que .arrow-top {
+  display: none;
+}
+.que .arrow-bottom {
+  display: block;
+}
+.que.on .arrow-bottom {
+  display: none;
+}
+.que.on .arrow-top {
+  display: block;
+}
+
+@media (max-width: 1280px) {
+  .lottie-container5 {
+    display: none;
+  }
+  .centerInner {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .centerInner {
+    width: 90%;
+  }
+  .centerInnerTop .noticeBar {
+    width: 320px;
+    padding: 10px 12px;
+  }
+  .que > span,
+  .que > p,
+  .anw > span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .centerInnerTop .noticeBar {
+    width: 280px;
+    padding: 5px 1vw;
+  }
+  .centerInnerTop .noticeBar input::placeholder {
+    font-size: 12px;
+  }
+  .centerInnerTop .noticeBar input {
+    width: 125px;
+  }
+  .que > span,
+  .anw > span {
+    font-size: 14px;
+  }
+  .pageNumber > span,
+  .pageNumber > i {
+    font-size: 2.3vw;
+  }
+  .fa-magnifying-glass {
+    margin-left: 55px;
+    color: #909090;
+    font-size: 13px;
+  }
+  .centerInnerTop .noticeBar input::placeholder {
+    font-size: 12px;
+    font-family: "NanumSquareNeo";
+  }
+
+  footer {
+    background-color: #908bcc;
+  }
+}
+
+@media (max-width: 480px) {
+  .que::before {
+    margin: 0 10px;
+  }
+  .que > span,
+  .anw > span {
+    font-size: 13px;
+  }
+  .que > p {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .que > span {
+    width: 50%;
+  }
+  .anw > span {
+    width: 80%;
+  }
+  .pageNumber > span,
+  .pageNumber > i {
+    font-size: 13px;
+  }
+  .pageNumber > span {
+    margin: 0 5px;
+  }
+  .faqList {
+    margin: 30px 0 50px;
+  }
+
+  footer {
+    margin-top: 100px;
+    padding: 15px 2vw;
+  }
+  footer div img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+
+  footer div:nth-of-type(2) div:nth-of-type(1) p,
+  footer div:nth-of-type(2) > h3,
+  footer div:nth-of-type(3) a p {
+    font-size: 8px;
+    margin: 0;
+    line-height: 11px;
+  }
+  footer div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div:nth-of-type(3) a p {
+    margin: 0 20px;
+  }
+  footer div:nth-of-type(2) div {
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lottie-container7 {
+    width: 160px;
+    bottom: 120px;
+  }
+}
